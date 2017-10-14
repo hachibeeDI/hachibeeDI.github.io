@@ -29,7 +29,7 @@ ReactとGraphQLベースで作られた、SPAとして動作するらしいナ�
 あ、ちなみにですがたぶんNetlifyでホスティングしたほうがCI連携とかもしやすくてたぶん楽だとおもいます。
 
 
-0. #{アカウント名}.github.io なリポジトリを作成
+0. ${アカウント名}.github.io なリポジトリを作成
 
   この辺については記事が無数にあるので詳しくは説明しません。
 
@@ -56,6 +56,16 @@ ReactとGraphQLベースで作られた、SPAとして動作するらしいナ�
   `npm run build-gh-io` を走らせることで `public` というディレクトリが生成されるはずです。  
   ビルドが完了したら `public` ディレクトリに移動しましょう。そしたら中で `git init` して、こちらも先ほどと同様にリモートブランチを登録します。  
   あとは `git add -u; git commit` して、masterブランチとしてoriginにpushしましょう。
+
+```bash
+$ npm run build-gh-io
+$ cd public
+$ git init
+$ git remote set-url origin git@github.com:$(your-account)/$(account-name).github.io.git
+$ git add -u
+$ git commit
+$ git push origin master
+```
 
 
 おめでとうございます。これでデプロイは完了です。Kyleさんの顔写真とデフォルトのポストがいくつか表示されているはずです。

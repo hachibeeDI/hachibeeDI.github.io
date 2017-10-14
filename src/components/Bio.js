@@ -29,8 +29,18 @@ class Bio extends React.Component {
           Written by <strong>Ogura Daiki</strong> who lives and works in Tokyo building useful things.
         </div>
         <div>
+          <a href="http://hachibeechan.hateblo.jp/">
+            Blog articles not about tech are on here.
+          </a>
+        </div>
+        <div>
+          <a href="https://twitter.com/hatchinee">
+            You might want to follow my twitter account.
+          </a>
+        </div>
+        <div>
           <a href="https://github.com/hachibeeDI/hachibeeDI.github.io">
-            This blog is hosted on Github.
+            GitHub repository which hosts this blog.
           </a>
         </div>
       </p>

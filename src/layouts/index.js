@@ -1,3 +1,7 @@
+import 'prismjs/themes/prism-okaidia.css'
+import '../css/base.css'
+
+
 import React from 'react'
 import Link from 'gatsby-link'
 import { Container } from 'react-responsive-grid'
