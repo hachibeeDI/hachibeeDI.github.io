@@ -4,6 +4,10 @@ import { Container } from 'react-responsive-grid'
 
 import { rhythm, scale } from '../utils/typography'
 
+
+const blogTitle = 'Hatch tech blog'
+
+
 class Template extends React.Component {
   render() {
     const { location, children } = this.props
@@ -31,7 +35,7 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-            Gatsby Starter Blog
+            {blogTitle}
           </Link>
         </h1>
       )
@@ -52,7 +56,7 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-            Gatsby Starter Blog
+            {blogTitle}
           </Link>
         </h3>
       )
