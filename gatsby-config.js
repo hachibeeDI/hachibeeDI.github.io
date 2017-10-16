@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter Blog",
-    author: "Kyle Mathews",
+    title: "Hatch tech blog",
+    author: "Ogura Daiki",
     siteUrl: "https://hachibeedi.github.io",
   },
   plugins: [
