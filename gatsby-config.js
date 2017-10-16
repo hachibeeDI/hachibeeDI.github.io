@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Gatsby Starter Blog",
     author: "Kyle Mathews",
+    siteUrl: "https://hachibeedi.github.io",
   },
   plugins: [
     {
@@ -49,5 +50,6 @@ module.exports = {
         pathToConfigModule: "src/utils/typography",
       },
     },
+    {resolve: "gatsby-plugin-sitemap"},
   ],
 }
