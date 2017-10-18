@@ -1,3 +1,21 @@
 html, body {
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Meiryo, "Yu Gothic", YuGothic, Verdana, sans-serif;
 }
+
+
+.article-title {
+  margin-bottom: 12px;
+}
+
+
+.tags {
+  display: inline-block;
+  margin: 4px;
+  padding: 2px 6px;
+  border: 1px solid #eee;
+  background-color: #fbfbfb;
+  border-radius: 2px;
+}
+.tags:first-child {
+  margin-left: 0;
+}

@@ -4,27 +4,35 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 
 import Bio from '../components/Bio'
+import SEO from '../components/SEO'
 import { rhythm, scale } from '../utils/typography'
 
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
+    const {frontmatter} = post;
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
 
     return (
       <div>
-        <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-        <h1>{post.frontmatter.title}</h1>
+        <Helmet title={`${frontmatter.title} | ${siteTitle}`} />
+        <SEO />
+        <h1 className="article-title">{frontmatter.title}</h1>
+        <div>Category: {frontmatter.category}</div>
+        <div>
+          {frontmatter.tags.map(t => (
+            <span className="tags">{t}</span>
+          ))}
+        </div>
         <p
           style={{
-            ...scale(-1 / 5),
+            fontSize: '12px',
             display: 'block',
             marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
           }}
         >
-          {post.frontmatter.date}
+          {frontmatter.date}
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
@@ -54,6 +62,8 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        category
+        tags
       }
     }
   }

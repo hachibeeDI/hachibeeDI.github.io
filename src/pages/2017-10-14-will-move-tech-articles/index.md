@@ -2,6 +2,11 @@
 title: "はてなから技術系記事をこちらに移転させます"
 date: "2017-10-14T12:00:00Z"
 path: "/first-announcement/"
+category: blog
+tags:
+  - blog
+  - Gatsby
+  - JavaScript
 ---
 
 ## 技術系ブログ記事をはてなブログから移転します
