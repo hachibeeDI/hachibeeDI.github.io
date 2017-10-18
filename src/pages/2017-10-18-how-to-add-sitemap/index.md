@@ -1,7 +1,7 @@
 ---
 title: "GatsbyへのSite.xmlの追加方法"
 date: "2017-10-14T12:00:00Z"
-path: "/how-to-add-site.xml"
+path: "/how-to-add-site-xml"
 category: Blog
 tags:
   - Blog

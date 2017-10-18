@@ -5,6 +5,7 @@ import get from 'lodash/get'
 
 import Bio from '../components/Bio'
 import SEO from '../components/SEO'
+import SNSShare from '../components/sns-share'
 import { rhythm, scale } from '../utils/typography'
 
 
@@ -22,7 +23,7 @@ class BlogPostTemplate extends React.Component {
         <div>Category: {frontmatter.category}</div>
         <div>
           {frontmatter.tags.map(t => (
-            <span className="tags">{t}</span>
+            <span key={t} className="tags">{t}</span>
           ))}
         </div>
         <p
@@ -34,7 +35,9 @@ class BlogPostTemplate extends React.Component {
         >
           {frontmatter.date}
         </p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <article dangerouslySetInnerHTML={{ __html: post.html }} />
+
+        <SNSShare title={frontmatter.title} />
         <hr
           style={{
             marginBottom: rhythm(1),

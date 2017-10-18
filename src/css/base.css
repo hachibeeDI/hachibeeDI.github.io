@@ -19,3 +19,17 @@ html, body {
 .tags:first-child {
   margin-left: 0;
 }
+
+
+.sns-share__area {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.sns-share__button {
+    display: inline-block;
+    margin: 0 8px;
+}
+.sns-share__button:first-child {
+    margin-left: 0;
+}
