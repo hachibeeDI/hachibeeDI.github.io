@@ -1,2 +1,0 @@
-webpackJsonp([0x81b8806e4260],{"./node_modules/json-loader/index.js!./.cache/json/index.json":function(e,t){e.exports={data:{site:{siteMetadata:{title:"Gatsby Starter Blog"}},allMarkdownRemark:{edges:[{node:{excerpt:"...",frontmatter:{path:"/first-announcement/",date:"14 October, 2017",title:"はてなから技術系記事をこちらに移転させます"}}}]}},pathContext:{}}}});
-//# sourceMappingURL=path---index-a6fbb4f548d5d4d9200f.js.map
