@@ -18,7 +18,7 @@ class BlogPostTemplate extends React.Component {
     return (
       <div>
         <Helmet title={`${frontmatter.title} | ${siteTitle}`} />
-        <SEO />
+        <SEO postNode={post} postPath={frontmatter.path} postSEO />
         <h1 className="article-title">{frontmatter.title}</h1>
         <div>Category: {frontmatter.category}</div>
         <div>
@@ -63,6 +63,7 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
+        path
         title
         date(formatString: "MMMM DD, YYYY")
         category
