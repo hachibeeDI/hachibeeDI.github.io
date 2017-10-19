@@ -1,14 +1,13 @@
 module.exports = {
   // blogPostDir: "sample-posts", // The name of directory that contains your posts.
   siteTitle: "Hatch tech blog", // Site title.
-  siteTitleAlt: "GatsbyJS Advanced Starter", // Alternative site title for SEO.
+  siteTitleAlt: "Tech blog about programming", // Alternative site title for SEO.
   siteLogo: "https://cdn1.www.st-hatena.com/users/ha/hachibeechan/profile.gif", // Logo used for SEO and manifest.
   siteUrl: "https://hachibeedi.github.io/", // Domain of your website without pathPrefix.
   pathPrefix: "/", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription: "A GatsbyJS stater with Advanced design in mind.", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
   siteFBAppID: "", // FB Application ID for using app insights
-  googleAnalyticsID: "", // GA tracking ID.
   disqusShortname: "", // Disqus shortname.
   postDefaultCategoryID: "Tech", // Default category for posts.
   userName: "Ogura Daiki", // Username to display in the author segment.
@@ -21,17 +20,17 @@ module.exports = {
   userLinks: [
     {
       label: "GitHub",
-      url: "https://github.com/Vagr9K/gatsby-advanced-starter",
+      url: "https://github.com/hachibeeDI",
       iconClassName: "fa fa-github"
     },
     {
       label: "Twitter",
-      url: "https://twitter.com/Vagr9K",
+      url: "https://twitter.com/hatchinee",
       iconClassName: "fa fa-twitter"
     },
     {
       label: "Email",
-      url: "mailto:vagr9k@gmail.com",
+      url: "mailto:8hachibee125@gmail.com",
       iconClassName: "fa fa-envelope"
     }
   ],
