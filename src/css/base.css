@@ -33,3 +33,10 @@ html, body {
 .sns-share__button:first-child {
     margin-left: 0;
 }
+
+
+/* category */
+.categories {
+    list-style: none;
+    margin: 0;
+}

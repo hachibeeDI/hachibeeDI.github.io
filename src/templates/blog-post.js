@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
+import _ from 'lodash'
 
 import Bio from '../components/Bio'
 import SEO from '../components/SEO'
@@ -20,7 +21,7 @@ class BlogPostTemplate extends React.Component {
         <Helmet title={`${frontmatter.title} | ${siteTitle}`} />
         <SEO postNode={post} postPath={frontmatter.path} postSEO />
         <h1 className="article-title">{frontmatter.title}</h1>
-        <div>Category: {frontmatter.category}</div>
+        <div>Category: <Link to={`/categories/${_.kebabCase(frontmatter.category)}`}>{frontmatter.category}</Link></div>
         <div>
           {frontmatter.tags.map(t => (
             <span key={t} className="tags">{t}</span>

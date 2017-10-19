@@ -28,7 +28,7 @@ class BlogIndex extends React.Component {
                 >
                   <Link
                     style={{ boxShadow: 'none' }}
-                    to={post.node.frontmatter.path}
+                    to={`/entry${post.node.frontmatter.path}`}
                   >
                     {post.node.frontmatter.title}
                   </Link>
