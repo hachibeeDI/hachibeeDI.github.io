@@ -1,12 +1,12 @@
 {
   "assetsByChunkName": {
-    "component---src-pages-index-js": [
-      "component---src-pages-index-js-9491940a3d0f0787c329.js",
-      "component---src-pages-index-js-9491940a3d0f0787c329.js.map"
+    "path---entry-first-announcement": [
+      "path---entry-first-announcement-ef5513bf19f6483f4c65.js",
+      "path---entry-first-announcement-ef5513bf19f6483f4c65.js.map"
     ],
-    "path---how-to-add-site-xml": [
-      "path---how-to-add-site-xml-504a058d1272d0aff35c.js",
-      "path---how-to-add-site-xml-504a058d1272d0aff35c.js.map"
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-7c99c3f2ea7640571f67.js",
+      "component---src-pages-index-js-7c99c3f2ea7640571f67.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
@@ -17,36 +17,44 @@
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
     ],
     "component---src-templates-blog-post-js": [
-      "component---src-templates-blog-post-js-5708257b0481cd5f0777.js",
-      "component---src-templates-blog-post-js-5708257b0481cd5f0777.js.map"
+      "component---src-templates-blog-post-js-fed9bcdf5a0e55771ab4.js",
+      "component---src-templates-blog-post-js-fed9bcdf5a0e55771ab4.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-490cd6e7641fd9c37705.js",
-      "component---src-layouts-index-js-490cd6e7641fd9c37705.js.map"
+      "component---src-layouts-index-js-ef5c2aaa827aa84ad637.js",
+      "component---src-layouts-index-js-ef5c2aaa827aa84ad637.js.map"
     ],
     "path---index": [
-      "path---index-0618a2f1ba7e3353e9bc.js",
-      "path---index-0618a2f1ba7e3353e9bc.js.map"
+      "path---index-4e36ed4b1b44b2dae401.js",
+      "path---index-4e36ed4b1b44b2dae401.js.map"
+    ],
+    "component---src-templates-category-js": [
+      "component---src-templates-category-js-b5d1ebc80cd4a326dbda.js",
+      "component---src-templates-category-js-b5d1ebc80cd4a326dbda.js.map"
     ],
     "commons": [
-      "commons-79a84f0b1b0d64b444fd.js",
+      "commons-9662879a467791392b1c.js",
       "build-js-styles.css",
-      "commons-79a84f0b1b0d64b444fd.js.map",
+      "commons-9662879a467791392b1c.js.map",
       "build-js-styles.css.map"
+    ],
+    "path---categories-blog": [
+      "path---categories-blog-c2596ee24ead4e2658c4.js",
+      "path---categories-blog-c2596ee24ead4e2658c4.js.map"
     ],
     "path---offline-plugin-app-shell-fallback": [
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
-    "path---first-announcement": [
-      "path---first-announcement-ef5513bf19f6483f4c65.js",
-      "path---first-announcement-ef5513bf19f6483f4c65.js.map"
-    ],
     "app": [
-      "app-16289c3cfce686ea55f5.js",
+      "app-b52a0574bf4435d5f1da.js",
       "build-js-styles.css",
-      "app-16289c3cfce686ea55f5.js.map",
+      "app-b52a0574bf4435d5f1da.js.map",
       "build-js-styles.css.map"
+    ],
+    "path---entry-how-to-add-site-xml": [
+      "path---entry-how-to-add-site-xml-aea6d649ebdf1749d8fe.js",
+      "path---entry-how-to-add-site-xml-aea6d649ebdf1749d8fe.js.map"
     ]
   }
 }
