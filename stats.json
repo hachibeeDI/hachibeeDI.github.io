@@ -4,6 +4,10 @@
       "path---entry-first-announcement-ef5513bf19f6483f4c65.js",
       "path---entry-first-announcement-ef5513bf19f6483f4c65.js.map"
     ],
+    "path---entry-how-to-add-category-and-tags-page": [
+      "path---entry-how-to-add-category-and-tags-page-725d0cbbf7e0e6e30c8b.js",
+      "path---entry-how-to-add-category-and-tags-page-725d0cbbf7e0e6e30c8b.js.map"
+    ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-7c99c3f2ea7640571f67.js",
       "component---src-pages-index-js-7c99c3f2ea7640571f67.js.map"
@@ -25,8 +29,8 @@
       "component---src-layouts-index-js-ef5c2aaa827aa84ad637.js.map"
     ],
     "path---index": [
-      "path---index-4e36ed4b1b44b2dae401.js",
-      "path---index-4e36ed4b1b44b2dae401.js.map"
+      "path---index-5cdfd95af5438d8cc2b4.js",
+      "path---index-5cdfd95af5438d8cc2b4.js.map"
     ],
     "component---src-templates-category-js": [
       "component---src-templates-category-js-b5d1ebc80cd4a326dbda.js",
@@ -39,17 +43,17 @@
       "build-js-styles.css.map"
     ],
     "path---categories-blog": [
-      "path---categories-blog-c2596ee24ead4e2658c4.js",
-      "path---categories-blog-c2596ee24ead4e2658c4.js.map"
+      "path---categories-blog-a2aafdd3e3b79bb3577c.js",
+      "path---categories-blog-a2aafdd3e3b79bb3577c.js.map"
     ],
     "path---offline-plugin-app-shell-fallback": [
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-b52a0574bf4435d5f1da.js",
+      "app-95da4d8b9367b8b8c9f9.js",
       "build-js-styles.css",
-      "app-b52a0574bf4435d5f1da.js.map",
+      "app-95da4d8b9367b8b8c9f9.js.map",
       "build-js-styles.css.map"
     ],
     "path---entry-how-to-add-site-xml": [
