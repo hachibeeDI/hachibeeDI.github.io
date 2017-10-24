@@ -17,35 +17,42 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
 
     return (
-      <div>
+      <article>
         <Helmet title={`${frontmatter.title} | ${siteTitle}`} />
         <SEO postNode={post} postPath={frontmatter.path} postSEO />
-        <h1 className="article-title">{frontmatter.title}</h1>
-        <div>Category: <Link to={`/categories/${_.kebabCase(frontmatter.category)}`}>{frontmatter.category}</Link></div>
-        <div>
-          {frontmatter.tags.map(t => (
-            <span key={t} className="tags">{t}</span>
-          ))}
-        </div>
-        <p
-          style={{
-            fontSize: '12px',
-            display: 'block',
-            marginBottom: rhythm(1),
-          }}
-        >
-          {frontmatter.date}
-        </p>
-        <article dangerouslySetInnerHTML={{ __html: post.html }} />
+        <header>
+          <h1 className="article-title">{frontmatter.title}</h1>
+          <nav>
+            <div>Category: <Link to={`/categories/${_.kebabCase(frontmatter.category)}`}>{frontmatter.category}</Link></div>
+            <div>
+              {frontmatter.tags.map(t => (
+                <span key={t} className="tags">{t}</span>
+              ))}
+            </div>
+          </nav>
 
-        <SNSShare title={frontmatter.title} />
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
-        <Bio />
-      </div>
+          <p
+            style={{
+              fontSize: '12px',
+              display: 'block',
+              marginBottom: rhythm(1),
+            }}
+          >
+            {frontmatter.date}
+          </p>
+        </header>
+        <section dangerouslySetInnerHTML={{ __html: post.html }} />
+
+        <footer>
+          <SNSShare title={frontmatter.title} />
+          <hr
+            style={{
+              marginBottom: rhythm(1),
+            }}
+          />
+          <Bio />
+        </footer>
+      </article>
     )
   }
 }

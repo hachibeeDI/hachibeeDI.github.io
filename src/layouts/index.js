@@ -71,8 +71,17 @@ class Template extends React.Component {
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
-        {header}
-        {children()}
+        <section>
+          <header>
+            {header}
+          </header>
+
+          {children()}
+
+          <footer>
+            Copyright © 2017. Ogura Daiki
+          </footer>
+        <section>
       </Container>
     )
   }

@@ -13,9 +13,11 @@ class BlogIndex extends React.Component {
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
-      <div>
+      <section>
         <Helmet title={get(this, 'props.data.site.siteMetadata.title')} />
-        <Bio />
+        <aside>
+          <Bio />
+        </aside>
         {posts.map(post => {
           if (post.node.path !== '/404/') {
             const title = get(post, 'node.frontmatter.title') || post.node.path
@@ -39,7 +41,7 @@ class BlogIndex extends React.Component {
             )
           }
         })}
-      </div>
+      </section>
     )
   }
 }

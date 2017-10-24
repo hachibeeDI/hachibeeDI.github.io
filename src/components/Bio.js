@@ -9,7 +9,7 @@ import { rhythm } from '../utils/typography'
 class Bio extends React.Component {
   render() {
     return (
-      <p
+      <aside
         style={{
           marginBottom: rhythm(2.5),
         }}
@@ -43,7 +43,7 @@ class Bio extends React.Component {
             GitHub repository which hosts this blog.
           </a>
         </div>
-      </p>
+      </aside>
     )
   }
 }
