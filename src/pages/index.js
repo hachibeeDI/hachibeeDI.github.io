@@ -9,7 +9,6 @@ import { rhythm } from '../utils/typography'
 
 class BlogIndex extends React.Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
@@ -18,20 +17,14 @@ class BlogIndex extends React.Component {
         <aside>
           <Bio />
         </aside>
-        {posts.map(post => {
-          if (post.node.path !== '/404/') {
-            const title = get(post, 'node.frontmatter.title') || post.node.path
+        {posts
+          .filter(post => post.node.path !== '/404/')
+          .map(post => {
+            const title = get(post, 'node.frontmatter.title') || post.node.path;
             return (
               <div key={post.node.frontmatter.path}>
-                <h3
-                  style={{
-                    marginBottom: rhythm(1 / 4),
-                  }}
-                >
-                  <Link
-                    style={{ boxShadow: 'none' }}
-                    to={`/entry${post.node.frontmatter.path}`}
-                  >
+                <h3 style={{marginBottom: rhythm(1 / 4)}}>
+                  <Link style={{ boxShadow: 'none' }} to={`/entry${post.node.frontmatter.path}`}>
                     {post.node.frontmatter.title}
                   </Link>
                 </h3>
@@ -39,16 +32,16 @@ class BlogIndex extends React.Component {
                 <p dangerouslySetInnerHTML={{ __html: post.node.excerpt }} />
               </div>
             )
-          }
-        })}
+          })
+        }
       </section>
     )
   }
 }
-
-BlogIndex.propTypes = {
-  route: React.PropTypes.object,
-}
+//
+// BlogIndex.propTypes = {
+//   route: React.PropTypes.object,
+// }
 
 export default BlogIndex
 

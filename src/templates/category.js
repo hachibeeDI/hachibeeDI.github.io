@@ -6,7 +6,7 @@ import config from "../data/site-config";
 
 export default class CategoryTemplate extends React.Component {
   render() {
-    const category = this.props.pathContext.category;
+    const {category} = this.props.pathContext;
     const postEdges = this.props.data.allMarkdownRemark.edges;
     return (
       <section className="category-container">

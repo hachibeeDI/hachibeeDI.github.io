@@ -4,29 +4,25 @@ import Link from "gatsby-link";
 
 class PostListing extends React.Component {
   getPostList() {
-    const postList = [];
-    return this.props.postEdges.map(postEdge => {
-      return {
-        path: `/entry${postEdge.node.frontmatter.path}`,
-        tags: postEdge.node.frontmatter.tags,
-        // cover: postEdge.node.frontmatter.cover,
-        title: postEdge.node.frontmatter.title,
-        date: postEdge.node.frontmatter.date,
-        excerpt: postEdge.node.excerpt,
-        timeToRead: postEdge.node.timeToRead
-      };
-    });
+    return this.props.postEdges.map(({node}) => ({
+        path: `/entry${node.frontmatter.path}`,
+        tags: node.frontmatter.tags,
+        // cover: node.frontmatter.cover,
+        title: node.frontmatter.title,
+        date: node.frontmatter.date,
+        excerpt: node.excerpt,
+        timeToRead: node.timeToRead
+      })
+    )
   }
 
   render() {
-    const postList = this.getPostList();
     return (
       <section>
         <h2>カテゴリー一覧</h2>
 
         <ul className="categories">
-          {/* Your post list here. */
-          postList.map(post =>
+          {this.getPostList().map(post =>
             <li key={post.title}>
               <Link to={post.path}>
                 {post.title}

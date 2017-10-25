@@ -33,6 +33,7 @@
     "typography-theme-wordpress-2016": "^0.15.1"
   },
   "devDependencies": {
+    "eslint": "^4.9.0",
     "gh-pages": "^0.12.0",
     "prettier": "^1.6.1"
   },
