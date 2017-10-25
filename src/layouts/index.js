@@ -72,13 +72,13 @@ class Template extends React.Component {
         }}
       >
         <section>
-          <header>
+          <header role="banner">
             {header}
           </header>
 
           {children()}
 
-          <footer>
+          <footer role="contentinfo">
             Copyright © 2017. Ogura Daiki
           </footer>
         <section>

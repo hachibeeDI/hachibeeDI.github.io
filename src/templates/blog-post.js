@@ -17,12 +17,12 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
 
     return (
-      <article>
+      <article role="main">
         <Helmet title={`${frontmatter.title} | ${siteTitle}`} />
         <SEO postNode={post} postPath={frontmatter.path} postSEO />
         <header>
           <h1 className="article-title">{frontmatter.title}</h1>
-          <nav>
+          <nav role="navigation">
             <div>Category: <Link to={`/categories/${_.kebabCase(frontmatter.category)}`}>{frontmatter.category}</Link></div>
             <div>
               {frontmatter.tags.map(t => (
