@@ -8,8 +8,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
 
   return new Promise((resolve, reject) => {
-    const pages = []
-
     const blogPost = path.resolve("./src/templates/blog-post.js")
     const categoryPage = path.resolve("src/templates/category.js")
 
@@ -23,6 +21,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
               frontmatter {
                 path
                 category
+                tags
               }
             }
           }
@@ -37,6 +36,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
         // Create blog posts pages.
         const categorySet = new Set();
+        const tags = new Set();
         result.data.allMarkdownRemark.edges.forEach(edge => {
           const {frontmatter} = edge.node
 
@@ -49,6 +49,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           })
 
           categorySet.add(frontmatter.category)
+          frontmatter.category.forEach(tags.add.bind(tags))
         })
 
         Array.from(categorySet).forEach(category => {
@@ -59,6 +60,10 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
               category
             }
           })
+        })
+
+        Array.from(tags).forEach(tag => {
+          // call createPage
         })
 
       })
