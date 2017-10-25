@@ -14,9 +14,8 @@ class BlogIndex extends React.Component {
     return (
       <section>
         <Helmet title={get(this, 'props.data.site.siteMetadata.title')} />
-        <aside>
-          <Bio />
-        </aside>
+
+        <Bio />
         {posts
           .filter(post => post.node.path !== '/404/')
           .map(post => {

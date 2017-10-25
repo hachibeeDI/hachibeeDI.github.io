@@ -1,5 +1,5 @@
 ---
-title: "はてなから技術系記事をこちらに移転させます"
+title: "Gatsbyでブログを作る 技術系記事ははてなからGitHub Pageに移転させます"
 date: "2017-10-14T12:00:00Z"
 path: "/first-announcement/"
 category: Blog
