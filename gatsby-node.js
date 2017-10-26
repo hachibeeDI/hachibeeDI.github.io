@@ -49,7 +49,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           })
 
           categorySet.add(frontmatter.category)
-          frontmatter.category.forEach(tags.add.bind(tags))
+          frontmatter.tags.forEach(tags.add.bind(tags))
         })
 
         Array.from(categorySet).forEach(category => {

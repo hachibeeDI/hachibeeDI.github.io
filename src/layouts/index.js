@@ -64,13 +64,9 @@ class Template extends React.Component {
         </h3>
       )
     }
+
     return (
-      <Container
-        style={{
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-        }}
-      >
+      <Container style={{maxWidth: rhythm(24), padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`}}>
         <section>
           <header role="banner">
             {header}
@@ -81,7 +77,7 @@ class Template extends React.Component {
           <footer role="contentinfo">
             Copyright © 2017. Ogura Daiki
           </footer>
-        <section>
+        </section>
       </Container>
     )
   }
