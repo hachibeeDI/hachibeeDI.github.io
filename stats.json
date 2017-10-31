@@ -16,6 +16,10 @@
       "path----557518bd178906f8d58a.js",
       "path----557518bd178906f8d58a.js.map"
     ],
+    "path---entry-redux-debounced-action-dispatcher": [
+      "path---entry-redux-debounced-action-dispatcher-c9cb69a226f1c3f5ca2a.js",
+      "path---entry-redux-debounced-action-dispatcher-c9cb69a226f1c3f5ca2a.js.map"
+    ],
     "component---node-modules-gatsby-plugin-offline-app-shell-js": [
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
@@ -29,8 +33,12 @@
       "component---src-layouts-index-js-bfbd349ec71c8ad86974.js.map"
     ],
     "path---index": [
-      "path---index-d08f977d2734230c7d4b.js",
-      "path---index-d08f977d2734230c7d4b.js.map"
+      "path---index-18b936b8d80a061cb9ab.js",
+      "path---index-18b936b8d80a061cb9ab.js.map"
+    ],
+    "path---categories-front-end": [
+      "path---categories-front-end-4474e8535e8a1d96285a.js",
+      "path---categories-front-end-4474e8535e8a1d96285a.js.map"
     ],
     "component---src-templates-category-js": [
       "component---src-templates-category-js-c706998591e8bd52c1b6.js",
@@ -55,9 +63,9 @@
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-7c41d453201a03507f8a.js",
+      "app-694f627c486316f46475.js",
       "build-js-styles.css",
-      "app-7c41d453201a03507f8a.js.map",
+      "app-694f627c486316f46475.js.map",
       "build-js-styles.css.map"
     ],
     "path---entry-how-to-add-site-xml": [

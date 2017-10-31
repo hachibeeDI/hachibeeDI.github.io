@@ -5,6 +5,8 @@
 <url> <loc>https://hachibeedi.github.io/entry/how-to-add-site-xml</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hachibeedi.github.io/entry/how-to-add-category-and-tags-page</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hachibeedi.github.io/entry/customize-layout-gatsby-js</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://hachibeedi.github.io/entry/redux-debounced-action-dispatcher</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hachibeedi.github.io/categories/blog/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://hachibeedi.github.io/categories/front-end/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hachibeedi.github.io/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
