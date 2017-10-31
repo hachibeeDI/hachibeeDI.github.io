@@ -29,8 +29,8 @@
       "component---src-layouts-index-js-bfbd349ec71c8ad86974.js.map"
     ],
     "path---index": [
-      "path---index-13e1576e35f19d4fa6fa.js",
-      "path---index-13e1576e35f19d4fa6fa.js.map"
+      "path---index-d08f977d2734230c7d4b.js",
+      "path---index-d08f977d2734230c7d4b.js.map"
     ],
     "component---src-templates-category-js": [
       "component---src-templates-category-js-c706998591e8bd52c1b6.js",
@@ -43,17 +43,21 @@
       "build-js-styles.css.map"
     ],
     "path---categories-blog": [
-      "path---categories-blog-c7fe0fcd83eb2a4ec2a5.js",
-      "path---categories-blog-c7fe0fcd83eb2a4ec2a5.js.map"
+      "path---categories-blog-832aaf14d0a5ce204c93.js",
+      "path---categories-blog-832aaf14d0a5ce204c93.js.map"
+    ],
+    "path---entry-customize-layout-gatsby-js": [
+      "path---entry-customize-layout-gatsby-js-c494553e64e5dbb2e471.js",
+      "path---entry-customize-layout-gatsby-js-c494553e64e5dbb2e471.js.map"
     ],
     "path---offline-plugin-app-shell-fallback": [
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-758477c30c3ae29c6996.js",
+      "app-7c41d453201a03507f8a.js",
       "build-js-styles.css",
-      "app-758477c30c3ae29c6996.js.map",
+      "app-7c41d453201a03507f8a.js.map",
       "build-js-styles.css.map"
     ],
     "path---entry-how-to-add-site-xml": [
