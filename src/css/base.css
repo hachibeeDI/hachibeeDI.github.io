@@ -32,6 +32,7 @@ p > code {
     margin: 0;
     padding: 0;
     list-style: none;
+    min-height: 50px;
 }
 .sns-share__button {
     display: inline-block;
