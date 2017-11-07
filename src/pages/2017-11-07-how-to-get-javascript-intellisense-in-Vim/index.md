@@ -1,5 +1,5 @@
 ---
-title: "現在的な補完システムであるLanguage Server ProtocolとJavaScript版の運用、そしてVimとの連動についての雑なまとめ"
+title: "現代的な補完システムであるLanguage Server ProtocolとJavaScript版の運用、そしてVimとの連動についての雑なまとめ"
 date: "2017-11-07T12:00:00Z"
 path: "/how-to-get-javascript-intellisense-in-Vim"
 category: Vim
