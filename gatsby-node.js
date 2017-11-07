@@ -24,27 +24,37 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                 tags
               }
             }
+            next {
+              frontmatter { title path }
+            }
+            prev: previous {
+              frontmatter { title path }
+            }
           }
         }
       }
     `
-      ).then(result => {
-        if (result.errors) {
-          console.log(result.errors)
-          reject(result.errors)
+      ).then(({errors, data}) => {
+        if (errors) {
+          console.log(errors)
+          return reject(errors)
         }
 
+        console.log(data)
         // Create blog posts pages.
         const categorySet = new Set();
         const tags = new Set();
-        result.data.allMarkdownRemark.edges.forEach(edge => {
-          const {frontmatter} = edge.node
+        data.allMarkdownRemark.edges.forEach(({node, next, prev}) => {
+          const {frontmatter} = node
 
           createPage({
             path: `/entry${frontmatter.path}`,
             component: blogPost,
             context: {
+              id: node.id,
               path: frontmatter.path,
+              next,
+              prev,
             },
           })
 

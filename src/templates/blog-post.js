@@ -10,14 +10,38 @@ import SNSShare from '../components/sns-share'
 import { rhythm, scale } from '../utils/typography'
 
 
+const PostNav = ({ prev, next }) => (
+  <div className="post-nav">
+    {prev && (
+      <div className="post-nav__side">
+        <span className="post-nav__label">Previous Post</span>
+        <Link className="post-nav__link" to={`/entry${prev.frontmatter.path}`}>
+          {prev.frontmatter.title}
+        </Link>
+      </div>
+    )}
+    {next && (
+      <div className="post-nav__side">
+        <span className="post-nav__label">Next Post</span>
+        <Link className="post-nav__link" to={`/entry${next.frontmatter.path}`}>
+          {next.frontmatter.title}
+        </Link>
+      </div>
+    )}
+  </div>
+);
+
+
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const {frontmatter} = post;
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
 
+    const {next, prev} = this.props.pathContext
+
     return (
-      <article role="main">
+      <article className="main-article" role="main">
         <Helmet title={`${frontmatter.title} | ${siteTitle}`} />
         <SEO postNode={post} postPath={frontmatter.path} postSEO />
         <header>
@@ -50,6 +74,7 @@ class BlogPostTemplate extends React.Component {
               marginBottom: rhythm(1),
             }}
           />
+          <PostNav prev={prev} next={next} />
           <Bio />
         </footer>
       </article>

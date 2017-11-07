@@ -23,6 +23,11 @@ p > code {
 }
 
 
+.main-article {
+    min-height: 90vh;
+}
+
+
 .sns-share__area {
     margin: 0;
     padding: 0;
@@ -41,4 +46,21 @@ p > code {
 .categories {
     list-style: none;
     margin: 0;
+}
+
+
+.post-nav {
+    margin: 18px auto;
+}
+
+.post-nav__link {
+    line-height: 8px;
+}
+.post-nav__side {
+    margin-bottom: 12px;
+}
+.post-nav__label {
+    display: block;
+    line-height: 8px;
+    font-size: 15px;
 }
