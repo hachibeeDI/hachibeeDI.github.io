@@ -2,9 +2,11 @@ html, body {
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Meiryo, "Yu Gothic", YuGothic, Verdana, sans-serif;
 }
 
-
-.article-title {
-  margin-bottom: 12px;
+/* style for only one-line code */
+p > code {
+    display: inline-block;
+    padding: 0px 3px;
+    background-color: #eaeaea;
 }
 
 
