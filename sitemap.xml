@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <url> <loc>https://hachibeedi.github.io/offline-plugin-app-shell-fallback/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://hachibeedi.github.io/entry/first-announcement/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hachibeedi.github.io/entry/how-to-add-site-xml</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://hachibeedi.github.io/entry/first-announcement/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hachibeedi.github.io/entry/how-to-add-category-and-tags-page</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hachibeedi.github.io/entry/customize-layout-gatsby-js</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://hachibeedi.github.io/entry/how-to-get-javascript-intellisense-in-Vim</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hachibeedi.github.io/entry/redux-debounced-action-dispatcher</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://hachibeedi.github.io/entry/how-to-get-javascript-intellisense-in-Vim</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hachibeedi.github.io/categories/blog/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://hachibeedi.github.io/categories/vim/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hachibeedi.github.io/categories/front-end/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://hachibeedi.github.io/categories/vim/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hachibeedi.github.io/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
