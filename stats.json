@@ -32,9 +32,13 @@
       "component---src-layouts-index-js-bfbd349ec71c8ad86974.js",
       "component---src-layouts-index-js-bfbd349ec71c8ad86974.js.map"
     ],
+    "path---categories-vim": [
+      "path---categories-vim-51031e45dc9c3acfe893.js",
+      "path---categories-vim-51031e45dc9c3acfe893.js.map"
+    ],
     "path---index": [
-      "path---index-18b936b8d80a061cb9ab.js",
-      "path---index-18b936b8d80a061cb9ab.js.map"
+      "path---index-27888b0a141f8bb7ca02.js",
+      "path---index-27888b0a141f8bb7ca02.js.map"
     ],
     "path---categories-front-end": [
       "path---categories-front-end-4474e8535e8a1d96285a.js",
@@ -50,6 +54,10 @@
       "commons-9662879a467791392b1c.js.map",
       "build-js-styles.css.map"
     ],
+    "path---entry-how-to-get-javascript-intellisense-in-vim": [
+      "path---entry-how-to-get-javascript-intellisense-in-vim-6ca16150050d9f31c5bf.js",
+      "path---entry-how-to-get-javascript-intellisense-in-vim-6ca16150050d9f31c5bf.js.map"
+    ],
     "path---categories-blog": [
       "path---categories-blog-832aaf14d0a5ce204c93.js",
       "path---categories-blog-832aaf14d0a5ce204c93.js.map"
@@ -63,9 +71,9 @@
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-694f627c486316f46475.js",
+      "app-55b7c5a96f26b32c1336.js",
       "build-js-styles.css",
-      "app-694f627c486316f46475.js.map",
+      "app-55b7c5a96f26b32c1336.js.map",
       "build-js-styles.css.map"
     ],
     "path---entry-how-to-add-site-xml": [
