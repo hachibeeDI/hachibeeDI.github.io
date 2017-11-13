@@ -1,52 +1,56 @@
 {
   "assetsByChunkName": {
     "path---entry-first-announcement": [
-      "path---entry-first-announcement-a1aad58937f5c642c7e5.js",
-      "path---entry-first-announcement-a1aad58937f5c642c7e5.js.map"
+      "path---entry-first-announcement-d36e0384ec7ae75bcbb2.js",
+      "path---entry-first-announcement-d36e0384ec7ae75bcbb2.js.map"
     ],
     "path---entry-how-to-add-category-and-tags-page": [
-      "path---entry-how-to-add-category-and-tags-page-9ab3fffe265b3cb9952a.js",
-      "path---entry-how-to-add-category-and-tags-page-9ab3fffe265b3cb9952a.js.map"
+      "path---entry-how-to-add-category-and-tags-page-828b0fa2c48ea65470ed.js",
+      "path---entry-how-to-add-category-and-tags-page-828b0fa2c48ea65470ed.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-e2c312c31584873d5fe2.js",
-      "component---src-pages-index-js-e2c312c31584873d5fe2.js.map"
+      "component---src-pages-index-js-81bebb7972270991cd0c.js",
+      "component---src-pages-index-js-81bebb7972270991cd0c.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
       "path----557518bd178906f8d58a.js.map"
     ],
+    "path---entry-implement-next-and-previous-links-to-gatsby": [
+      "path---entry-implement-next-and-previous-links-to-gatsby-bb481b57cf3300a38d8e.js",
+      "path---entry-implement-next-and-previous-links-to-gatsby-bb481b57cf3300a38d8e.js.map"
+    ],
     "path---entry-redux-debounced-action-dispatcher": [
-      "path---entry-redux-debounced-action-dispatcher-377caca3af8127769ec5.js",
-      "path---entry-redux-debounced-action-dispatcher-377caca3af8127769ec5.js.map"
+      "path---entry-redux-debounced-action-dispatcher-341a3b27dfc05fc6008d.js",
+      "path---entry-redux-debounced-action-dispatcher-341a3b27dfc05fc6008d.js.map"
     ],
     "component---node-modules-gatsby-plugin-offline-app-shell-js": [
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
     ],
     "component---src-templates-blog-post-js": [
-      "component---src-templates-blog-post-js-2f99bb48b3419e815e31.js",
-      "component---src-templates-blog-post-js-2f99bb48b3419e815e31.js.map"
+      "component---src-templates-blog-post-js-ed63426c882f32c96cf0.js",
+      "component---src-templates-blog-post-js-ed63426c882f32c96cf0.js.map"
     ],
     "component---src-layouts-index-js": [
       "component---src-layouts-index-js-bfbd349ec71c8ad86974.js",
       "component---src-layouts-index-js-bfbd349ec71c8ad86974.js.map"
     ],
     "path---categories-vim": [
-      "path---categories-vim-51031e45dc9c3acfe893.js",
-      "path---categories-vim-51031e45dc9c3acfe893.js.map"
+      "path---categories-vim-2e457f1bc552ac6c9e55.js",
+      "path---categories-vim-2e457f1bc552ac6c9e55.js.map"
     ],
     "path---index": [
-      "path---index-27888b0a141f8bb7ca02.js",
-      "path---index-27888b0a141f8bb7ca02.js.map"
+      "path---index-97d95ed11e504bb1c391.js",
+      "path---index-97d95ed11e504bb1c391.js.map"
     ],
     "path---categories-front-end": [
-      "path---categories-front-end-4474e8535e8a1d96285a.js",
-      "path---categories-front-end-4474e8535e8a1d96285a.js.map"
+      "path---categories-front-end-69a4b06419e6485765dc.js",
+      "path---categories-front-end-69a4b06419e6485765dc.js.map"
     ],
     "component---src-templates-category-js": [
-      "component---src-templates-category-js-c706998591e8bd52c1b6.js",
-      "component---src-templates-category-js-c706998591e8bd52c1b6.js.map"
+      "component---src-templates-category-js-e9075f7b10500e0978e6.js",
+      "component---src-templates-category-js-e9075f7b10500e0978e6.js.map"
     ],
     "commons": [
       "commons-9662879a467791392b1c.js",
@@ -54,31 +58,31 @@
       "commons-9662879a467791392b1c.js.map",
       "build-js-styles.css.map"
     ],
-    "path---entry-how-to-get-javascript-intellisense-in-vim": [
-      "path---entry-how-to-get-javascript-intellisense-in-vim-cc3ec4ced2ce3a20f6bc.js",
-      "path---entry-how-to-get-javascript-intellisense-in-vim-cc3ec4ced2ce3a20f6bc.js.map"
+    "path---categories-gatsby": [
+      "path---categories-gatsby-e6239511db3751973c9b.js",
+      "path---categories-gatsby-e6239511db3751973c9b.js.map"
     ],
-    "path---categories-blog": [
-      "path---categories-blog-832aaf14d0a5ce204c93.js",
-      "path---categories-blog-832aaf14d0a5ce204c93.js.map"
+    "path---entry-how-to-get-javascript-intellisense-in-vim": [
+      "path---entry-how-to-get-javascript-intellisense-in-vim-bca995970e765ca71e03.js",
+      "path---entry-how-to-get-javascript-intellisense-in-vim-bca995970e765ca71e03.js.map"
     ],
     "path---entry-customize-layout-gatsby-js": [
-      "path---entry-customize-layout-gatsby-js-2e66cdf2451f757d311c.js",
-      "path---entry-customize-layout-gatsby-js-2e66cdf2451f757d311c.js.map"
+      "path---entry-customize-layout-gatsby-js-dd2dc60f03bfb77d4dc1.js",
+      "path---entry-customize-layout-gatsby-js-dd2dc60f03bfb77d4dc1.js.map"
     ],
     "path---offline-plugin-app-shell-fallback": [
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-6984de2ae9177ffb3661.js",
+      "app-a1071ebd7c17af16189f.js",
       "build-js-styles.css",
-      "app-6984de2ae9177ffb3661.js.map",
+      "app-a1071ebd7c17af16189f.js.map",
       "build-js-styles.css.map"
     ],
     "path---entry-how-to-add-site-xml": [
-      "path---entry-how-to-add-site-xml-10a2c6129ea00aee91a5.js",
-      "path---entry-how-to-add-site-xml-10a2c6129ea00aee91a5.js.map"
+      "path---entry-how-to-add-site-xml-ab1a30760e7490f13890.js",
+      "path---entry-how-to-add-site-xml-ab1a30760e7490f13890.js.map"
     ]
   }
 }
