@@ -15,7 +15,7 @@ const PostNav = ({ prev, next }) => (
     {prev && (
       <div className="post-nav__side">
         <span className="post-nav__label">Previous Post</span>
-        <Link className="post-nav__link" to={`/entry${prev.frontmatter.path}`}>
+        <Link className="post-nav__link" to={`/entry/${prev.frontmatter.path}`}>
           {prev.frontmatter.title}
         </Link>
       </div>
@@ -23,7 +23,7 @@ const PostNav = ({ prev, next }) => (
     {next && (
       <div className="post-nav__side">
         <span className="post-nav__label">Next Post</span>
-        <Link className="post-nav__link" to={`/entry${next.frontmatter.path}`}>
+        <Link className="post-nav__link" to={`/entry/${next.frontmatter.path}`}>
           {next.frontmatter.title}
         </Link>
       </div>

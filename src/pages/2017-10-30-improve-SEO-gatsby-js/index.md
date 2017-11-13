@@ -1,8 +1,8 @@
 ---
 title: "Gatsbyでレイアウト全体やheadの内容をカスタマイズする方法"
 date: "2017-10-30T12:00:00Z"
-path: "/customize-layout-gatsby-js"
-category: Blog
+path: "customize-layout-gatsby-js"
+category: Gatsby
 tags:
   - Blog
   - Gatsby

@@ -1,8 +1,8 @@
 ---
 title: "GatsbyへCategoryとタグ機能を追加する"
 date: "2017-10-22T12:00:00Z"
-path: "/how-to-add-category-and-tags-page"
-category: Blog
+path: "how-to-add-category-and-tags-page"
+category: Gatsby
 tags:
   - Blog
   - Gatsby

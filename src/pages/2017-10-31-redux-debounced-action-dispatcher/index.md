@@ -1,7 +1,7 @@
 ---
 title: "Reduxにおけるバリデーションの実装パターンとReducerの呼び出し遅延について（debounced-action-dispatcherを作りました）"
 date: "2017-10-31T23:00:00Z"
-path: "/redux-debounced-action-dispatcher"
+path: "redux-debounced-action-dispatcher"
 category: FrontEnd
 cover: https://cdn-ak.f.st-hatena.com/images/fotolife/h/hachibeechan/20170714/20170714180530.png
 tags:

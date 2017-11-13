@@ -48,7 +48,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           const {frontmatter} = node
 
           createPage({
-            path: `/entry${frontmatter.path}`,
+            path: `/entry/${frontmatter.path}`,
             component: blogPost,
             context: {
               id: node.id,
