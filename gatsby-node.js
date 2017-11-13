@@ -14,69 +14,70 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     resolve(
       graphql(
         `
-      {
-        allMarkdownRemark(limit: 1000) {
-          edges {
-            node {
-              frontmatter {
-                path
-                category
-                tags
+        {
+          allMarkdownRemark(limit: 1000) {
+            edges {
+              node {
+                frontmatter {
+                  path
+                  category
+                  tags
+                }
               }
-            }
-            next {
-              frontmatter { title path }
-            }
-            prev: previous {
-              frontmatter { title path }
+              next {
+                frontmatter { title path }
+              }
+              prev: previous {
+                frontmatter { title path }
+              }
             }
           }
         }
-      }
-    `
-      ).then(({errors, data}) => {
-        if (errors) {
-          console.log(errors)
-          return reject(errors)
-        }
+        `
+      )
+        .then(({errors, data}) => {
+          if (errors) {
+            console.log(errors)
+            return reject(errors)
+          }
 
-        console.log(data)
-        // Create blog posts pages.
-        const categorySet = new Set();
-        const tags = new Set();
-        data.allMarkdownRemark.edges.forEach(({node, next, prev}) => {
-          const {frontmatter} = node
+          console.log(data)
+          // Create blog posts pages.
+          const categorySet = new Set();
+          const tags = new Set();
+          data.allMarkdownRemark.edges.forEach(({node, next, prev}) => {
+            const {frontmatter} = node
 
-          createPage({
-            path: `/entry/${frontmatter.path}`,
-            component: blogPost,
-            context: {
-              id: node.id,
-              path: frontmatter.path,
-              next,
-              prev,
-            },
+            createPage({
+              path: `/entry/${frontmatter.path}`,
+              component: blogPost,
+              context: {
+                id: node.id,
+                path: frontmatter.path,
+                next,
+                prev,
+              },
+            })
+
+            categorySet.add(frontmatter.category)
+            frontmatter.tags.forEach(tags.add.bind(tags))
           })
 
-          categorySet.add(frontmatter.category)
-          frontmatter.tags.forEach(tags.add.bind(tags))
-        })
-
-        Array.from(categorySet).forEach(category => {
-          createPage({
-            path: `/categories/${_.kebabCase(category)}/`,
-            component: categoryPage,
-            context: {
-              category
-            }
+          Array.from(categorySet).forEach(category => {
+            createPage({
+              path: `/categories/${_.kebabCase(category)}/`,
+              component: categoryPage,
+              context: {
+                category
+              }
+            })
           })
-        })
 
-        Array.from(tags).forEach(tag => {
-          // call createPage
-        })
+          Array.from(tags).forEach(tag => {
+            // call createPage
+          })
 
-      })
+        })
     )
   })
 }
