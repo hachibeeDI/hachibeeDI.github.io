@@ -7,6 +7,21 @@ import Bio from '../components/Bio'
 import { rhythm } from '../utils/typography'
 
 
+function Card({title, path, excerpt, date}) {
+  return (
+    <section className="article-card">
+      <h3 className="article-card__title">
+        <Link style={{ boxShadow: 'none' }} to={`/entry/${path}`}>
+          {title}
+        </Link>
+      </h3>
+      <small>{date}</small>
+      <p className="article-card__excerpt" dangerouslySetInnerHTML={{ __html: excerpt }} />
+    </section>
+  )
+}
+
+
 class BlogIndex extends React.Component {
   render() {
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
@@ -19,18 +34,17 @@ class BlogIndex extends React.Component {
         {posts
           .filter(post => post.node.path !== '/404/')
           .map(post => {
-            const title = get(post, 'node.frontmatter.title') || post.node.path;
-            return (
-              <div key={post.node.frontmatter.path}>
-                <h3 style={{marginBottom: rhythm(1 / 4)}}>
-                  <Link style={{ boxShadow: 'none' }} to={`/entry/${post.node.frontmatter.path}`}>
-                    {post.node.frontmatter.title}
-                  </Link>
-                </h3>
-                <small>{post.node.frontmatter.date}</small>
-                <p dangerouslySetInnerHTML={{ __html: post.node.excerpt }} />
-              </div>
-            )
+            const {
+              node: {
+                frontmatter: {
+                  title,
+                  path,
+                  date
+                },
+                excerpt
+              }
+            } = post;
+            return (<Card key={path} title={title} path={path} excerpt={excerpt} date={date} />)
           })
         }
       </section>
