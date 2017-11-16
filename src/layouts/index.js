@@ -6,6 +6,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import { Container } from 'react-responsive-grid'
 
+import Footer from '../components/footer'
 import { rhythm, scale } from '../utils/typography'
 
 
@@ -66,7 +67,11 @@ class Template extends React.Component {
     }
 
     return (
-      <Container style={{maxWidth: rhythm(24), padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`}}>
+      <Container style={{
+        maxWidth: rhythm(24),
+        padding: `${rhythm(1.5)} ${rhythm(3 / 4)} 0 ${rhythm(3 / 4)}`,
+        minHeight: '90vh'}
+      }>
         <section>
           <header role="banner">
             {header}
@@ -74,9 +79,7 @@ class Template extends React.Component {
 
           {children()}
 
-          <footer role="contentinfo">
-            Copyright © 2017. Ogura Daiki
-          </footer>
+          <Footer />
         </section>
       </Container>
     )

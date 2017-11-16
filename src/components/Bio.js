@@ -1,17 +1,16 @@
-import React from 'react'
+import React, {PureComponent} from 'react'
 
 // Import typefaces
 import 'typeface-montserrat'
 
 import { rhythm } from '../utils/typography'
 
-class Bio extends React.Component {
+
+export default class Bio extends PureComponent {
   render() {
     return (
       <aside
-        style={{
-          marginBottom: rhythm(2.5),
-        }}
+        style={{marginBottom: rhythm(2.5)}}
       >
         <img
           src="https://ja.gravatar.com/userimage/41771054/43d236d88acc75effc5d65af6bef4fe5.jpg?size=200"
@@ -28,17 +27,17 @@ class Bio extends React.Component {
           Written by <strong>Ogura Daiki</strong> who lives and works in Tokyo building useful things.
         </div>
         <div>
-          <a href="http://hachibeechan.hateblo.jp/">
-            Blog articles not about tech are on here.
+          <a href="http://hachibeechan.hateblo.jp/" rel="noopener noreferrer">
+            Blog articles not about tech are here.
           </a>
         </div>
         <div>
-          <a href="https://twitter.com/hatchinee">
+          <a href="https://twitter.com/hatchinee" rel="noopener noreferrer">
             You might want to follow my twitter account.
           </a>
         </div>
         <div>
-          <a href="https://github.com/hachibeeDI/hachibeeDI.github.io">
+          <a href="https://github.com/hachibeeDI/hachibeeDI.github.io" rel="noopener noreferrer">
             GitHub repository which hosts this blog.
           </a>
         </div>
@@ -46,5 +45,3 @@ class Bio extends React.Component {
     )
   }
 }
-
-export default Bio

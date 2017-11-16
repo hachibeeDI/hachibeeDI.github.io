@@ -10,6 +10,18 @@ p > code {
 }
 
 
+.footer {
+    padding: 32px 0 0 0;
+}
+.footer__title {
+    font-family: Montserrat, sans-serif;
+    margin: 8px auto;
+}
+.copyright {
+    font-size: 90%;
+}
+
+
 .tags {
   display: inline-block;
   margin: 4px;
@@ -51,9 +63,8 @@ p > code {
 
 
 .post-nav {
-    margin: 18px auto;
+    margin: 32px auto;
 }
-
 .post-nav__link {
     line-height: 8px;
 }
