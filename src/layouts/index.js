@@ -1,13 +1,11 @@
-import 'prismjs/themes/prism-okaidia.css'
-import '../css/base.css'
+import 'prismjs/themes/prism-okaidia.css';
+import '../css/main.sass';
 
 
-import React from 'react'
-import Link from 'gatsby-link'
-import { Container } from 'react-responsive-grid'
+import React from 'react';
+import Link from 'gatsby-link';
 
-import Footer from '../components/footer'
-import { rhythm, scale } from '../utils/typography'
+import Footer from '../components/footer';
 
 
 const blogTitle = 'Hatch tech blog'
@@ -25,13 +23,7 @@ class Template extends React.Component {
     let header
     if (location.pathname === rootPath) {
       header = (
-        <h1
-          style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
-          }}
-        >
+        <h1 className="blog-title">
           <Link
             style={{
               boxShadow: 'none',
@@ -67,21 +59,18 @@ class Template extends React.Component {
     }
 
     return (
-      <Container style={{
-        maxWidth: rhythm(24),
-        padding: `${rhythm(1.5)} ${rhythm(3 / 4)} 0 ${rhythm(3 / 4)}`,
-        minHeight: '90vh'}
-      }>
-        <section>
+      <section className="container">
+        <div className="main-section">
           <header role="banner">
             {header}
           </header>
 
           {children()}
 
-          <Footer />
-        </section>
-      </Container>
+        </div>
+
+        <Footer />
+      </section>
     )
   }
 }

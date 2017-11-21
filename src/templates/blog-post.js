@@ -7,7 +7,7 @@ import _ from 'lodash'
 import Bio from '../components/Bio'
 import SEO from '../components/SEO'
 import SNSShare from '../components/sns-share'
-import { rhythm, scale } from '../utils/typography'
+import {rhythm} from '../utils/typography'
 
 
 const PostNav = ({ prev, next }) => (

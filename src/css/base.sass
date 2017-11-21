@@ -37,19 +37,28 @@ p > code
 
 
 @mixin main-container-width()
+  padding:
+    right: 12px
+    left: 12px
+
   width: 60%
   min-width: 780px
 
   @include max-screen(480px)
+    padding:
+      right: 0
+      left: 0
     min-width: 95vw
 
   @include max-screen(768px)
+    padding:
+      right: 0
+      left: 0
     min-width: 85vw
 
 
 .main-section
   box-sizing: border-box
-  padding: 32px 12px
   min-height: 90vh
   margin: auto
 
@@ -60,7 +69,7 @@ p > code
   @include main-container-width
 
   margin: auto
-  padding: 32px 0 0 0
+  padding-top: 32px
 
   &__title
     font-family: Montserrat, sans-serif
