@@ -61,15 +61,24 @@ p > code
   box-sizing: border-box
   min-height: 90vh
   margin: auto
+  padding:
+    top: 32px
+    bottom: 32px
 
   @include main-container-width
 
 
 .footer
-  @include main-container-width
+  background-color: #35373E
+  color: white
 
-  margin: auto
-  padding-top: 32px
+  &__inner
+    @include main-container-width
+
+    padding:
+      top: 28px
+      bottom: 12px
+    margin: auto
 
   &__title
     font-family: Montserrat, sans-serif
