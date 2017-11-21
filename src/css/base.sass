@@ -1,0 +1,70 @@
+html, body
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Meiryo, "Yu Gothic", YuGothic, Verdana, sans-serif
+
+
+/* style for only one-line code */
+p > code
+  display: inline-block
+  padding: 0px 3px
+  background-color: #eaeaea
+
+
+.blog-title
+  margin: 0 auto 40px
+  font-size: 62px
+
+
+.container
+  height: 100%
+  width: 100%
+
+
+
+@mixin max-screen($break-point)
+  @media screen and (max-width: $break-point)
+    @content
+
+
+@mixin min-screen($break-point)
+  @media screen and (min-width: $break-point)
+    @content
+
+
+
+@mixin screen($break-point-min, $break-point-max)
+  @media screen and (min-width: $break-point-min) and (max-width: $break-point-max)
+    @content
+
+
+@mixin main-container-width()
+  width: 60%
+  min-width: 780px
+
+  @include max-screen(480px)
+    min-width: 95vw
+
+  @include max-screen(768px)
+    min-width: 85vw
+
+
+.main-section
+  box-sizing: border-box
+  padding: 32px 12px
+  min-height: 90vh
+  margin: auto
+
+  @include main-container-width
+
+
+.footer
+  @include main-container-width
+
+  margin: auto
+  padding: 32px 0 0 0
+
+  &__title
+    font-family: Montserrat, sans-serif
+    margin: 8px auto
+
+.copyright
+  font-size: 90%

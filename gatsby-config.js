@@ -52,5 +52,6 @@ module.exports = {
     },
     "gatsby-plugin-sitemap",
     `gatsby-plugin-twitter`,
+    "gatsby-plugin-sass",
   ],
 }
