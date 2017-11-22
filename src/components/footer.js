@@ -1,5 +1,5 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
 
 
 export default function Footer() {
@@ -13,7 +13,7 @@ export default function Footer() {
               textDecoration: 'none',
               color: 'inherit',
             }}
-            to={'/'}
+            to="/"
           >
             Hatch tech blog
           </Link>
@@ -23,6 +23,6 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
 
