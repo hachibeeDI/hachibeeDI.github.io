@@ -9,15 +9,15 @@ import { rhythm } from '../utils/typography'
 
 function Card({title, path, excerpt, date}) {
   return (
-    <section className="article-card">
-      <h3 className="article-card__title">
-        <Link style={{ boxShadow: 'none' }} to={`/entry/${path}`}>
+    <Link style={{ boxShadow: 'none', color: 'inherit' }} to={`/entry/${path}`}>
+      <section className="article-card">
+        <h3 className="article-card__title">
           {title}
-        </Link>
-      </h3>
-      <small>{date}</small>
-      <p className="article-card__excerpt" dangerouslySetInnerHTML={{ __html: excerpt }} />
-    </section>
+        </h3>
+        <small>{date}</small>
+        <p className="article-card__excerpt" dangerouslySetInnerHTML={{ __html: excerpt }} />
+      </section>
+    </Link>
   )
 }
 
