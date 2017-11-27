@@ -6,11 +6,9 @@ import 'typeface-montserrat';
 import { rhythm } from '../utils/typography';
 
 
-export default function Bio() {
+export default function Bio({className = ''}) {
   return (
-    <aside
-      style={{marginBottom: rhythm(2.5)}}
-    >
+    <aside className={`bio ${className}`} >
       <img
         src="https://ja.gravatar.com/userimage/41771054/43d236d88acc75effc5d65af6bef4fe5.jpg?size=200"
         alt="Ogura Daiki"

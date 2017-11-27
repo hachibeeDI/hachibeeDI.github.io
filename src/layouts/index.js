@@ -13,14 +13,14 @@ const blogTitle = 'Hatch tech blog'
 
 class Template extends React.Component {
   render() {
-    const { location, children } = this.props
+    const { location, children } = this.props;
 
-    let rootPath = `/`
+    let rootPath = `/`;
     if (typeof __PREFIX_PATHS__ !== `undefined` && __PREFIX_PATHS__) {
-      rootPath = __PATH_PREFIX__ + `/`
+      rootPath = `${__PATH_PREFIX__}/`;
     }
 
-    let header
+    let header;
     if (location.pathname === rootPath) {
       header = (
         <h1 className="blog-title">
@@ -30,7 +30,7 @@ class Template extends React.Component {
               textDecoration: 'none',
               color: 'inherit',
             }}
-            to={'/'}
+            to="/"
           >
             {blogTitle}
           </Link>
@@ -41,7 +41,7 @@ class Template extends React.Component {
         <h3
           style={{
             fontFamily: 'Montserrat, sans-serif',
-            marginTop: 0,
+            margin: 0,
           }}
         >
           <Link
@@ -60,10 +60,12 @@ class Template extends React.Component {
 
     return (
       <section className="container">
-        <div className="main-section">
-          <header role="banner">
+        <header className="main-header" role="banner">
+          <div className="main-header__inner">
             {header}
-          </header>
+          </div>
+        </header>
+        <div className="main-section">
 
           {children()}
 
