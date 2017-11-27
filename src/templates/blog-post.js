@@ -1,13 +1,14 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
-import get from 'lodash/get'
-import _ from 'lodash'
+import React from 'react';
+import Helmet from 'react-helmet';
+import Link from 'gatsby-link';
+import get from 'lodash/get';
+import _ from 'lodash';
 
-import Bio from '../components/Bio'
-import SEO from '../components/SEO'
-import SNSShare from '../components/sns-share'
-import {rhythm} from '../utils/typography'
+import Bio from '../components/Bio';
+import SEO from '../components/SEO';
+import SNSShare from '../components/sns-share';
+import {rhythm} from '../utils/typography';
+import {siteUrl} from '../data/site-config';
 
 
 const PostNav = ({ prev, next }) => (
@@ -68,7 +69,7 @@ class BlogPostTemplate extends React.Component {
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
 
         <footer>
-          <SNSShare title={frontmatter.title} link={global.location.href} />
+          <SNSShare title={frontmatter.title} link={`${siteUrl}entry/${frontmatter.path}`} />
           <hr
             style={{
               marginBottom: rhythm(1),
