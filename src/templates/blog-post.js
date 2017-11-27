@@ -68,7 +68,7 @@ class BlogPostTemplate extends React.Component {
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
 
         <footer>
-          <SNSShare title={frontmatter.title} />
+          <SNSShare title={frontmatter.title} link={global.location.href} />
           <hr
             style={{
               marginBottom: rhythm(1),
