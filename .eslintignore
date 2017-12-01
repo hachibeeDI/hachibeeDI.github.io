@@ -1,2 +1,5 @@
 gatsby-config.js
 src/data/site-config.js
+.cache/
+public/
+static/
