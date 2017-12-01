@@ -28,6 +28,7 @@
     "gatsby-transformer-remark": "^1.7.1",
     "gatsby-transformer-sharp": "^1.6.1",
     "lodash": "^4.15.0",
+    "prismjs": "^1.8.4",
     "react-helmet": "^5.2.0",
     "react-share": "^1.17.0",
     "typeface-montserrat": "^0.0.37",
