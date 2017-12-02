@@ -1,6 +1,9 @@
 html, body
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Meiryo, "Yu Gothic", YuGothic, Verdana, sans-serif
 
+a
+  // TODO: to surpress styles provided by typeface. Going to no need if I remove that
+  box-shadow: none
 
 p
   color: #315F69
@@ -66,6 +69,7 @@ p > code
   margin: auto
   padding:
     bottom: 16px
+  min-height: 70vh
 
   @include main-container-width
 
@@ -103,3 +107,17 @@ p > code
 
 .copyright
   font-size: 90%
+
+  display: inline-block
+  vertical-align: bottom
+
+.footer-icon-github
+  display: inline-block
+  margin-left: 24px
+  box-sizing: border-box
+  vertical-align: bottom
+  padding: 5px
+  width: 28px
+  height: 28px
+  border-radius: 50%
+
