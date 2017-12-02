@@ -51,7 +51,9 @@ class BlogPostTemplate extends React.Component {
             <div>Category: <Link to={`/categories/${_.kebabCase(frontmatter.category)}`}>{frontmatter.category}</Link></div>
             <div>
               {frontmatter.tags.map(t => (
-                <span key={t} className="tags">{t}</span>
+                <Link key={t} className="tags" to={`/tags/${_.kebabCase(t)}`}>
+                  <span>{t}</span>
+                </Link>
               ))}
             </div>
           </nav>
@@ -66,7 +68,10 @@ class BlogPostTemplate extends React.Component {
             {frontmatter.date}
           </p>
         </header>
-        <section dangerouslySetInnerHTML={{ __html: post.html }} />
+        <section
+          className="markdown-section"
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
 
         <footer>
           <SNSShare title={frontmatter.title} link={`${siteUrl}entry/${frontmatter.path}`} />
