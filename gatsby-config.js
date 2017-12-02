@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Hatch tech blog",
-    author: "Ogura Daiki",
-    siteUrl: "https://hachibeedi.github.io",
+    title: 'Hatch tech blog',
+    author: 'Ogura Daiki',
+    siteUrl: 'https://hachibeedi.github.io',
   },
   plugins: [
     {
