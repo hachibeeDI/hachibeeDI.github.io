@@ -28,6 +28,7 @@
     "gatsby-transformer-sharp": "^1.6.1",
     "lodash": "^4.15.0",
     "prismjs": "^1.8.4",
+    "prop-types": "^15.6.0",
     "react-helmet": "^5.2.0",
     "react-share": "^1.17.0",
     "typeface-montserrat": "^0.0.37",
@@ -52,6 +53,10 @@
     "type": "git",
     "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
   },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
   "scripts": {
     "dev": "gatsby develop",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
