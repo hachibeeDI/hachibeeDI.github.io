@@ -1,70 +1,94 @@
 {
   "assetsByChunkName": {
+    "path---tags-blog": [
+      "path---tags-blog-11406eb1c5741887eb55.js",
+      "path---tags-blog-11406eb1c5741887eb55.js.map"
+    ],
     "path---entry-first-announcement": [
       "path---entry-first-announcement-d36e0384ec7ae75bcbb2.js",
       "path---entry-first-announcement-d36e0384ec7ae75bcbb2.js.map"
     ],
     "path---entry-how-to-add-category-and-tags-page": [
-      "path---entry-how-to-add-category-and-tags-page-4ab68ba7b706fa8b02f2.js",
-      "path---entry-how-to-add-category-and-tags-page-4ab68ba7b706fa8b02f2.js.map"
+      "path---entry-how-to-add-category-and-tags-page-76046d32f8bc85b04c26.js",
+      "path---entry-how-to-add-category-and-tags-page-76046d32f8bc85b04c26.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-4978821d264712f44f8e.js",
-      "component---src-pages-index-js-4978821d264712f44f8e.js.map"
+      "component---src-pages-index-js-1a780bc773e3e71ecab6.js",
+      "component---src-pages-index-js-1a780bc773e3e71ecab6.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
       "path----557518bd178906f8d58a.js.map"
     ],
     "path---entry-implement-next-and-previous-links-to-gatsby": [
-      "path---entry-implement-next-and-previous-links-to-gatsby-1f837d0668c50185ada4.js",
-      "path---entry-implement-next-and-previous-links-to-gatsby-1f837d0668c50185ada4.js.map"
+      "path---entry-implement-next-and-previous-links-to-gatsby-a8df86178efc43a281d5.js",
+      "path---entry-implement-next-and-previous-links-to-gatsby-a8df86178efc43a281d5.js.map"
     ],
     "path---entry-redux-debounced-action-dispatcher": [
       "path---entry-redux-debounced-action-dispatcher-7ae3d13f89a662c81068.js",
       "path---entry-redux-debounced-action-dispatcher-7ae3d13f89a662c81068.js.map"
     ],
+    "path---tags-react": [
+      "path---tags-react-f4eb3d13682b39d4fa8e.js",
+      "path---tags-react-f4eb3d13682b39d4fa8e.js.map"
+    ],
     "component---node-modules-gatsby-plugin-offline-app-shell-js": [
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
     ],
+    "component---src-templates-tags-jsx": [
+      "component---src-templates-tags-jsx-6e6409800a9e6935eebe.js",
+      "component---src-templates-tags-jsx-6e6409800a9e6935eebe.js.map"
+    ],
     "component---src-templates-blog-post-js": [
-      "component---src-templates-blog-post-js-637386990d7fd7435b80.js",
-      "component---src-templates-blog-post-js-637386990d7fd7435b80.js.map"
+      "component---src-templates-blog-post-js-50b3c904c066d34c2633.js",
+      "component---src-templates-blog-post-js-50b3c904c066d34c2633.js.map"
     ],
     "component---src-layouts-index-js": [
       "component---src-layouts-index-js-b3ff6495fc663c624840.js",
       "component---src-layouts-index-js-b3ff6495fc663c624840.js.map"
     ],
+    "path---tags-gatsby": [
+      "path---tags-gatsby-5cf610e0ff92fb0cf92d.js",
+      "path---tags-gatsby-5cf610e0ff92fb0cf92d.js.map"
+    ],
     "path---categories-vim": [
-      "path---categories-vim-2e457f1bc552ac6c9e55.js",
-      "path---categories-vim-2e457f1bc552ac6c9e55.js.map"
+      "path---categories-vim-4af707634669a3944bbb.js",
+      "path---categories-vim-4af707634669a3944bbb.js.map"
     ],
     "path---index": [
-      "path---index-97d95ed11e504bb1c391.js",
-      "path---index-97d95ed11e504bb1c391.js.map"
+      "path---index-5ed5ed7494b666e3e615.js",
+      "path---index-5ed5ed7494b666e3e615.js.map"
     ],
     "path---categories-front-end": [
-      "path---categories-front-end-69a4b06419e6485765dc.js",
-      "path---categories-front-end-69a4b06419e6485765dc.js.map"
+      "path---categories-front-end-47ba41a2b856087aeec7.js",
+      "path---categories-front-end-47ba41a2b856087aeec7.js.map"
+    ],
+    "path---tags-redux": [
+      "path---tags-redux-8c0a9ad1d3fc60fe2dea.js",
+      "path---tags-redux-8c0a9ad1d3fc60fe2dea.js.map"
     ],
     "component---src-templates-category-js": [
-      "component---src-templates-category-js-18e05c6e046445bbfa96.js",
-      "component---src-templates-category-js-18e05c6e046445bbfa96.js.map"
+      "component---src-templates-category-js-49d60712407e679be891.js",
+      "component---src-templates-category-js-49d60712407e679be891.js.map"
+    ],
+    "path---tags-vim": [
+      "path---tags-vim-5862f92dae7b94de7f07.js",
+      "path---tags-vim-5862f92dae7b94de7f07.js.map"
     ],
     "commons": [
-      "commons-efc37bec224416739c2a.js",
+      "commons-56149a95219c68e26e73.js",
       "build-js-styles.css",
-      "commons-efc37bec224416739c2a.js.map",
+      "commons-56149a95219c68e26e73.js.map",
       "build-js-styles.css.map"
     ],
     "path---categories-gatsby": [
-      "path---categories-gatsby-e6239511db3751973c9b.js",
-      "path---categories-gatsby-e6239511db3751973c9b.js.map"
+      "path---categories-gatsby-8e59fad68a4c39640ad3.js",
+      "path---categories-gatsby-8e59fad68a4c39640ad3.js.map"
     ],
     "path---entry-how-to-get-javascript-intellisense-in-vim": [
-      "path---entry-how-to-get-javascript-intellisense-in-vim-eddea42e67ab59ad0e23.js",
-      "path---entry-how-to-get-javascript-intellisense-in-vim-eddea42e67ab59ad0e23.js.map"
+      "path---entry-how-to-get-javascript-intellisense-in-vim-c5301f75d4b286ea8677.js",
+      "path---entry-how-to-get-javascript-intellisense-in-vim-c5301f75d4b286ea8677.js.map"
     ],
     "path---entry-customize-layout-gatsby-js": [
       "path---entry-customize-layout-gatsby-js-da7e54b242986fab87d1.js",
@@ -74,10 +98,14 @@
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "path---tags-java-script": [
+      "path---tags-java-script-e4e5dbeb753ae3ff794e.js",
+      "path---tags-java-script-e4e5dbeb753ae3ff794e.js.map"
+    ],
     "app": [
-      "app-f9cfe7806d0baec4db1a.js",
+      "app-cda3af6f300eb4392ee9.js",
       "build-js-styles.css",
-      "app-f9cfe7806d0baec4db1a.js.map",
+      "app-cda3af6f300eb4392ee9.js.map",
       "build-js-styles.css.map"
     ],
     "path---entry-how-to-add-site-xml": [
