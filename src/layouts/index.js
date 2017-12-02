@@ -8,12 +8,9 @@ import Link from 'gatsby-link';
 import Footer from '../components/footer';
 
 
-const blogTitle = 'Hatch tech blog'
-
-
-class Template extends React.Component {
+export default class Template extends React.PureComponent {
   render() {
-    const { location, children } = this.props;
+    const { location, children, data } = this.props;
 
     let rootPath = `/`;
     if (typeof __PREFIX_PATHS__ !== `undefined` && __PREFIX_PATHS__) {
@@ -32,7 +29,7 @@ class Template extends React.Component {
             }}
             to="/"
           >
-            {blogTitle}
+            {data.site.siteMetadata.title}
           </Link>
         </h1>
       )
@@ -52,7 +49,7 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-            {blogTitle}
+            {data.site.siteMetadata.title}
           </Link>
         </h3>
       )
@@ -71,7 +68,7 @@ class Template extends React.Component {
 
         </div>
 
-        <Footer />
+        <Footer categories={data.categoryPages.edges} tags={data.tagPages.edges} />
       </section>
     )
   }
@@ -81,6 +78,38 @@ Template.propTypes = {
   children: React.PropTypes.func,
   location: React.PropTypes.object,
   route: React.PropTypes.object,
-}
+};
 
-export default Template
+
+export const query = graphql`
+  query LayoutQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+
+    tagPages: allSitePage(filter: {path: {regex: "^\/tags\/.+\/"}}) {
+      edges {
+        node {
+          id
+          path
+          context {
+            category
+          }
+        }
+      }
+    }
+    categoryPages: allSitePage(filter: {path: {regex: "^\/categories\/.+\/"}}) {
+      edges {
+        node {
+          id
+          path
+          context {
+            category
+          }
+        }
+      }
+    }
+  }
+`;
