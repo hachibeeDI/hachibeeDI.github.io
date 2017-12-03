@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 
 
-export default function PostListing({postEdges}) {
+export default function PostListing({title, postEdges}) {
   const posts = postEdges.map(({node}) => ({
     path: `/entry/${node.frontmatter.path}`,
     tags: node.frontmatter.tags,
@@ -15,7 +15,7 @@ export default function PostListing({postEdges}) {
 
   return (
     <section>
-      <h2>カテゴリー一覧</h2>
+      <h2>{title}</h2>
 
       <ul className="categories">
         {posts.map(post =>
