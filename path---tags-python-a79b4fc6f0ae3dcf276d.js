@@ -1,0 +1,2 @@
+webpackJsonp([7538477671963],{533:function(t,o){t.exports={data:{allMarkdownRemark:{totalCount:1,edges:[{node:{excerpt:"Pythonを書いていて、クラス自体をbool文脈の中でFalseとして扱うための方法です。 知っての通り、Pythonでは None ,  空文字 ,  0 以外の全てのオブジェクトはbool文脈の中ではTrue…",timeToRead:1,frontmatter:{title:"PythonにてFalseとして評価されるClassを作る",tags:["Python","MetaProgramming"],date:"2017-12-16T12:00:00Z",path:"falsy-class-in-Python"}}}]}},pathContext:{tag:"Python"}}}});
+//# sourceMappingURL=path---tags-python-a79b4fc6f0ae3dcf276d.js.map

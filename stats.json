@@ -1,5 +1,9 @@
 {
   "assetsByChunkName": {
+    "path---tags-python": [
+      "path---tags-python-a79b4fc6f0ae3dcf276d.js",
+      "path---tags-python-a79b4fc6f0ae3dcf276d.js.map"
+    ],
     "path---tags-blog": [
       "path---tags-blog-11406eb1c5741887eb55.js",
       "path---tags-blog-11406eb1c5741887eb55.js.map"
@@ -16,13 +20,21 @@
       "component---src-pages-index-js-1a780bc773e3e71ecab6.js",
       "component---src-pages-index-js-1a780bc773e3e71ecab6.js.map"
     ],
+    "path---entry-falsy-class-in-python": [
+      "path---entry-falsy-class-in-python-7472bc901e37f26d60c9.js",
+      "path---entry-falsy-class-in-python-7472bc901e37f26d60c9.js.map"
+    ],
+    "path---tags-meta-programming": [
+      "path---tags-meta-programming-823841a6f626fd487fe4.js",
+      "path---tags-meta-programming-823841a6f626fd487fe4.js.map"
+    ],
     "path---": [
-      "path----1bcd8a39a398672df2af.js",
-      "path----1bcd8a39a398672df2af.js.map"
+      "path----08832303d6fb8c74714c.js",
+      "path----08832303d6fb8c74714c.js.map"
     ],
     "path---entry-implement-next-and-previous-links-to-gatsby": [
-      "path---entry-implement-next-and-previous-links-to-gatsby-a8df86178efc43a281d5.js",
-      "path---entry-implement-next-and-previous-links-to-gatsby-a8df86178efc43a281d5.js.map"
+      "path---entry-implement-next-and-previous-links-to-gatsby-f556aa81495f14ac0250.js",
+      "path---entry-implement-next-and-previous-links-to-gatsby-f556aa81495f14ac0250.js.map"
     ],
     "path---entry-redux-debounced-action-dispatcher": [
       "path---entry-redux-debounced-action-dispatcher-7ae3d13f89a662c81068.js",
@@ -45,8 +57,8 @@
       "component---src-templates-blog-post-js-50b3c904c066d34c2633.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-123371796db473109319.js",
-      "component---src-layouts-index-js-123371796db473109319.js.map"
+      "component---src-layouts-index-js-1364fe2d81946021e7e3.js",
+      "component---src-layouts-index-js-1364fe2d81946021e7e3.js.map"
     ],
     "path---tags-gatsby": [
       "path---tags-gatsby-5cf610e0ff92fb0cf92d.js",
@@ -57,8 +69,8 @@
       "path---categories-vim-4af707634669a3944bbb.js.map"
     ],
     "path---index": [
-      "path---index-5ed5ed7494b666e3e615.js",
-      "path---index-5ed5ed7494b666e3e615.js.map"
+      "path---index-00bb80a2a1655767a193.js",
+      "path---index-00bb80a2a1655767a193.js.map"
     ],
     "path---categories-front-end": [
       "path---categories-front-end-47ba41a2b856087aeec7.js",
@@ -86,6 +98,10 @@
       "path---categories-gatsby-8e59fad68a4c39640ad3.js",
       "path---categories-gatsby-8e59fad68a4c39640ad3.js.map"
     ],
+    "path---categories-python": [
+      "path---categories-python-7da745fe303b3b2ca9e0.js",
+      "path---categories-python-7da745fe303b3b2ca9e0.js.map"
+    ],
     "path---entry-how-to-get-javascript-intellisense-in-vim": [
       "path---entry-how-to-get-javascript-intellisense-in-vim-c5301f75d4b286ea8677.js",
       "path---entry-how-to-get-javascript-intellisense-in-vim-c5301f75d4b286ea8677.js.map"
@@ -103,9 +119,9 @@
       "path---tags-java-script-e4e5dbeb753ae3ff794e.js.map"
     ],
     "app": [
-      "app-f6e160cb54e98bbbb41d.js",
+      "app-7387aa847a8a188d9a27.js",
       "build-js-styles.css",
-      "app-f6e160cb54e98bbbb41d.js.map",
+      "app-7387aa847a8a188d9a27.js.map",
       "build-js-styles.css.map"
     ],
     "path---entry-how-to-add-site-xml": [
