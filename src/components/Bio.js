@@ -3,8 +3,6 @@ import React, { PureComponent } from 'react';
 // Import typefaces
 import 'typeface-montserrat';
 
-import { rhythm } from '../utils/typography';
-
 
 export default function Bio({className = ''}) {
   return (

@@ -7,7 +7,6 @@ import _ from 'lodash';
 import Bio from '../components/Bio';
 import SEO from '../components/SEO';
 import SNSShare from '../components/sns-share';
-import {rhythm} from '../utils/typography';
 import {siteUrl} from '../data/site-config';
 
 
@@ -62,7 +61,7 @@ class BlogPostTemplate extends React.Component {
             style={{
               fontSize: '12px',
               display: 'block',
-              marginBottom: rhythm(1),
+              marginBottom: '26px',
             }}
           >
             {frontmatter.date}
@@ -77,7 +76,7 @@ class BlogPostTemplate extends React.Component {
           <SNSShare title={frontmatter.title} link={`${siteUrl}entry/${frontmatter.path}`} />
           <hr
             style={{
-              marginBottom: rhythm(1),
+              marginBottom: '26px',
             }}
           />
           <PostNav prev={prev} next={next} />
