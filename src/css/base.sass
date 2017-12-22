@@ -1,12 +1,40 @@
+@import "node_modules/normalize-scss/sass/normalize"
+
+@import "./mixins"
+
+
 html, body
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Meiryo, "Yu Gothic", YuGothic, Verdana, sans-serif
 
-a
-  // TODO: to surpress styles provided by typeface. Going to no need if I remove that
-  box-shadow: none
+html
+  font-size: 62.5%
 
-p
-  color: #315F69
+
+$base-font-size: 1.5rem
+body
+  @include font-rhythm($base-font-size)
+  color: #343434
+  margin: 0
+
+article
+  /* フォントレンダリング設定: 1x解像度ではsubpixel、2x以上の解像度ではgrayscale */
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: unset;
+  p
+    color: #1f3129
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx)
+  article
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+a
+  text-decoration: none
+
+
+ol, ul
+  padding-left: $base-font-size
+
 
 /* style for only one-line code */
 p > code
@@ -17,7 +45,7 @@ p > code
 
 .blog-title
   margin: 0
-  font-size: 48px
+  font-size: 4rem
   margin: 2px auto 4px
 
 
@@ -102,7 +130,7 @@ p > code
     margin: auto
 
   &__title
-    font-family: Montserrat, sans-serif
+    // font-family: Montserrat, sans-serif
     margin: 8px auto
 
 .copyright

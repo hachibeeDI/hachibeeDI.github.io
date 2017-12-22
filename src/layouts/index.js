@@ -37,7 +37,6 @@ export default class Template extends React.PureComponent {
       header = (
         <h3
           style={{
-            fontFamily: 'Montserrat, sans-serif',
             margin: 0,
           }}
         >

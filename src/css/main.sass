@@ -1,3 +1,5 @@
+@import "./mixins"
+
 @import "./base.sass"
 
 .tags
@@ -21,15 +23,23 @@
 $title-color: #2b2323
 
 
-
 .article-title
   color: $title-color
+  font-size: 2.2rem
+  line-height: 2.6rem
 
 
 .markdown-section
   h1, h2, h3, h4, h5
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Meiryo, "Yu Gothic", YuGothic, Verdana, sans-serif
     color: $title-color
+  h1, h2
+    margin: 2.5rem auto 1.4rem
+  h3, h4
+    margin: 2.2rem auto 1rem
+
+  h2 + h3
+    margin-top: 0
 
 
 .sns-share
@@ -66,8 +76,7 @@ $title-color: #2b2323
 
 .post-nav__label
   display: block
-    line-height: 8px
-    font-size: 15px
+  font-rhythm(1.5rem)
 
 
 
@@ -94,7 +103,35 @@ $title-color: #2b2323
 
 
 .bio
+  display: flex
+  align-items: center
   margin: 42px auto
+
+  &__author-photo-space
+    flex-grow: 0
+    flex-basis: 86px
+    max-width: 86px
+
+  &__author-description-space
+    width: auto
+
+  &__author-photo
+    border-radius: 50%
+
+  &__author-name
+    font-size: $base-font-size + .2
+    font-weight: bold
+
+  &__author-role
+    font-size: $base-font-size - .2
+    line-height: 1rem
+    color: #656565
+
+  &__author-links
+    list-style: none
+    margin: .8rem auto
+    padding-left: 0
+    line-height: $base-font-size + .2
 
 // %bio-icon
 //   display: inline-block
