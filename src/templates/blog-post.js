@@ -9,8 +9,7 @@ import SEO from '../components/SEO';
 import SNSShare from '../components/sns-share';
 import {siteUrl} from '../data/site-config';
 
-
-const PostNav = ({ prev, next }) => (
+const PostNav = ({prev, next}) => (
   <div className="post-nav">
     {prev && (
       <div className="post-nav__side">
@@ -31,14 +30,13 @@ const PostNav = ({ prev, next }) => (
   </div>
 );
 
-
 class BlogPostTemplate extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark
+    const post = this.props.data.markdownRemark;
     const {frontmatter} = post;
-    const siteTitle = get(this.props, 'data.site.siteMetadata.title')
+    const siteTitle = get(this.props, 'data.site.siteMetadata.title');
 
-    const {next, prev} = this.props.pathContext
+    const {next, prev} = this.props.pathContext;
 
     return (
       <article className="main-article" role="main">
@@ -47,7 +45,9 @@ class BlogPostTemplate extends React.Component {
         <header>
           <h1 className="article-title">{frontmatter.title}</h1>
           <nav role="navigation">
-            <div>Category: <Link to={`/categories/${_.kebabCase(frontmatter.category)}`}>{frontmatter.category}</Link></div>
+            <div>
+              Category: <Link to={`/categories/${_.kebabCase(frontmatter.category)}`}>{frontmatter.category}</Link>
+            </div>
             <div>
               {frontmatter.tags.map(t => (
                 <Link key={t} className="tags" to={`/tags/${_.kebabCase(t)}`}>
@@ -67,10 +67,7 @@ class BlogPostTemplate extends React.Component {
             {frontmatter.date}
           </p>
         </header>
-        <section
-          className="markdown-section"
-          dangerouslySetInnerHTML={{ __html: post.html }}
-        />
+        <section className="markdown-section" dangerouslySetInnerHTML={{__html: post.html}} />
 
         <footer>
           <SNSShare title={frontmatter.title} link={`${siteUrl}entry/${frontmatter.path}`} />
@@ -83,11 +80,11 @@ class BlogPostTemplate extends React.Component {
           <Bio />
         </footer>
       </article>
-    )
+    );
   }
 }
 
-export default BlogPostTemplate
+export default BlogPostTemplate;
 
 export const pageQuery = graphql`
   query BlogPostByPath($path: String!) {
@@ -97,7 +94,7 @@ export const pageQuery = graphql`
         author
       }
     }
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+    markdownRemark(frontmatter: {path: {eq: $path}}) {
       id
       html
       frontmatter {
@@ -109,4 +106,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

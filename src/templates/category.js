@@ -1,8 +1,7 @@
-import React from "react";
-import Helmet from "react-helmet";
-import PostListing from "../components/post-listing";
-import config from "../data/site-config";
-
+import React from 'react';
+import Helmet from 'react-helmet';
+import PostListing from '../components/post-listing';
+import config from '../data/site-config';
 
 export default class CategoryTemplate extends React.Component {
   render() {
@@ -21,11 +20,7 @@ export default class CategoryTemplate extends React.Component {
 /* eslint no-undef: "off"*/
 export const pageQuery = graphql`
   query CategoryPage($category: String) {
-    allMarkdownRemark(
-      limit: 1000
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { category: { eq: $category } } }
-    ) {
+    allMarkdownRemark(limit: 1000, sort: {fields: [frontmatter___date], order: DESC}, filter: {frontmatter: {category: {eq: $category}}}) {
       totalCount
       edges {
         node {

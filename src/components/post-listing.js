@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
-
 export default function PostListing({title, postEdges}) {
   const posts = postEdges.map(({node}) => ({
     path: `/entry/${node.frontmatter.path}`,
@@ -10,7 +9,7 @@ export default function PostListing({title, postEdges}) {
     title: node.frontmatter.title,
     date: node.frontmatter.date,
     excerpt: node.excerpt,
-    timeToRead: node.timeToRead
+    timeToRead: node.timeToRead,
   }));
 
   return (
@@ -18,13 +17,11 @@ export default function PostListing({title, postEdges}) {
       <h2>{title}</h2>
 
       <ul className="categories">
-        {posts.map(post =>
+        {posts.map(post => (
           <li key={post.title}>
-            <Link to={post.path}>
-              {post.title}
-            </Link>
+            <Link to={post.path}>{post.title}</Link>
           </li>
-        )}
+        ))}
       </ul>
     </section>
   );

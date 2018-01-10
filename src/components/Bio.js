@@ -1,9 +1,8 @@
-import React, { PureComponent } from 'react';
-
+import React, {PureComponent} from 'react';
 
 export default function Bio({className = ''}) {
   return (
-    <aside className={`bio ${className}`} >
+    <aside className={`bio ${className}`}>
       <div className="bio__author-photo-space">
         <img
           src="//ja.gravatar.com/userimage/41771054/43d236d88acc75effc5d65af6bef4fe5.jpg?size=200"

@@ -61,7 +61,7 @@
     "dev": "gatsby develop",
     "check-eslintrc": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
-    "fix": "eslint -- src --fix",
+    "fix": "prettier src/**/*.js? --write && prettier gatsby-node.js --write",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
     "develop": "gatsby develop",

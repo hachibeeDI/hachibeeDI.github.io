@@ -3,8 +3,7 @@ import Helmet from 'react-helmet';
 
 import config from '../data/site-config';
 
-
-export default function SEO({ postNode, postPath, postSEO }) {
+export default function SEO({postNode, postPath, postSEO}) {
   let title;
   let description;
   let image;
@@ -12,9 +11,7 @@ export default function SEO({ postNode, postPath, postSEO }) {
   if (postSEO) {
     const postMeta = postNode.frontmatter;
     title = postMeta.title;
-    description = postMeta.description
-      ? postMeta.description
-      : postNode.excerpt;
+    description = postMeta.description ? postMeta.description : postNode.excerpt;
     // image = postMeta.cover;
     postURL = config.siteUrl + postPath;
   } else {
@@ -29,8 +26,8 @@ export default function SEO({ postNode, postPath, postSEO }) {
       '@type': 'WebSite',
       url: blogURL,
       name: title,
-      alternateName: config.siteTitleAlt ? config.siteTitleAlt : ''
-    }
+      alternateName: config.siteTitleAlt ? config.siteTitleAlt : '',
+    },
   ];
   if (postSEO) {
     schemaOrgJSONLD.push([
@@ -42,12 +39,12 @@ export default function SEO({ postNode, postPath, postSEO }) {
             '@type': 'ListItem',
             position: 1,
             item: {
-              "@id": postURL,
+              '@id': postURL,
               name: title,
-              image
-            }
-          }
-        ]
+              image,
+            },
+          },
+        ],
       },
       {
         '@context': 'http://schema.org',
@@ -58,10 +55,10 @@ export default function SEO({ postNode, postPath, postSEO }) {
         headline: title,
         image: {
           '@type': 'ImageObject',
-          url: image
+          url: image,
         },
-        description
-      }
+        description,
+      },
     ]);
   }
   return (
@@ -71,9 +68,7 @@ export default function SEO({ postNode, postPath, postSEO }) {
       <meta name="image" content={image} />
 
       {/* Schema.org tags */}
-      <script type="application/ld+json">
-        {JSON.stringify(schemaOrgJSONLD)}
-      </script>
+      <script type="application/ld+json">{JSON.stringify(schemaOrgJSONLD)}</script>
 
       {/* OpenGraph tags */}
       <meta property="og:url" content={postSEO ? postURL : blogURL} />
@@ -81,17 +76,11 @@ export default function SEO({ postNode, postPath, postSEO }) {
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
-      <meta
-        property="fb:app_id"
-        content={config.siteFBAppID ? config.siteFBAppID : ""}
-      />
+      <meta property="fb:app_id" content={config.siteFBAppID ? config.siteFBAppID : ''} />
 
       {/* Twitter Card tags */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta
-        name="twitter:creator"
-        content={config.userTwitter ? config.userTwitter : ''}
-      />
+      <meta name="twitter:creator" content={config.userTwitter ? config.userTwitter : ''} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />

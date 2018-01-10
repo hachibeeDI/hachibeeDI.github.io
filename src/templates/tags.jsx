@@ -1,8 +1,7 @@
-import React from "react";
-import Helmet from "react-helmet";
-import PostListing from "../components/post-listing";
-import config from "../data/site-config";
-
+import React from 'react';
+import Helmet from 'react-helmet';
+import PostListing from '../components/post-listing';
+import config from '../data/site-config';
 
 export default class TagTemplate extends React.Component {
   render() {
@@ -21,11 +20,7 @@ export default class TagTemplate extends React.Component {
 /* eslint no-undef: "off"*/
 export const pageQuery = graphql`
   query TagPage($tag: String) {
-    allMarkdownRemark(
-      limit: 1000
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { tags: { eq: $tag } } }
-    ) {
+    allMarkdownRemark(limit: 1000, sort: {fields: [frontmatter___date], order: DESC}, filter: {frontmatter: {tags: {eq: $tag}}}) {
       totalCount
       edges {
         node {

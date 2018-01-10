@@ -1,53 +1,37 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import get from 'lodash/get'
-import Helmet from 'react-helmet'
+import React from 'react';
+import Link from 'gatsby-link';
+import get from 'lodash/get';
+import Helmet from 'react-helmet';
 
-import Bio from '../components/Bio'
-
+import Bio from '../components/Bio';
 
 function Card({title, path, excerpt, date}) {
   return (
-    <Link style={{ boxShadow: 'none', color: 'inherit' }} to={`/entry/${path}`}>
+    <Link style={{boxShadow: 'none', color: 'inherit'}} to={`/entry/${path}`}>
       <section className="article-card">
-        <h3 className="article-card__title">
-          {title}
-        </h3>
+        <h3 className="article-card__title">{title}</h3>
         <small>{date}</small>
-        <p className="article-card__excerpt" dangerouslySetInnerHTML={{ __html: excerpt }} />
+        <p className="article-card__excerpt" dangerouslySetInnerHTML={{__html: excerpt}} />
       </section>
     </Link>
-  )
+  );
 }
-
 
 class BlogIndex extends React.Component {
   render() {
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
+    const posts = get(this, 'props.data.allMarkdownRemark.edges');
 
     return (
       <section>
         <Helmet title={get(this, 'props.data.site.siteMetadata.title')} />
 
         <Bio />
-        {posts
-          .filter(post => post.node.path !== '/404/')
-          .map(post => {
-            const {
-              node: {
-                frontmatter: {
-                  title,
-                  path,
-                  date
-                },
-                excerpt
-              }
-            } = post;
-            return (<Card key={path} title={title} path={path} excerpt={excerpt} date={date} />)
-          })
-        }
+        {posts.filter(post => post.node.path !== '/404/').map(post => {
+          const {node: {frontmatter: {title, path, date}, excerpt}} = post;
+          return <Card key={path} title={title} path={path} excerpt={excerpt} date={date} />;
+        })}
       </section>
-    )
+    );
   }
 }
 //
@@ -55,7 +39,7 @@ class BlogIndex extends React.Component {
 //   route: React.PropTypes.object,
 // }
 
-export default BlogIndex
+export default BlogIndex;
 
 export const pageQuery = graphql`
   query IndexQuery {
@@ -64,7 +48,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
       edges {
         node {
           excerpt
@@ -79,4 +63,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
