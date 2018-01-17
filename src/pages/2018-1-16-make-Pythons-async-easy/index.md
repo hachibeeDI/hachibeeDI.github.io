@@ -1,5 +1,5 @@
 ---
-title: "Pythonのasync関数を扱いやすくする"
+title: "Pythonのasync関数を扱いやすくする方法"
 date: "2018-01-16T12:00:00Z"
 path: "make-Pthons-async-easy"
 category: Python
@@ -9,6 +9,8 @@ tags:
 ---
 
 ## Pythonのasync関数を扱いやすくするライブラリの紹介
+
+（最後に追記があります）
 
 最新のPythonでは、JavaScriptのようにasync関数を使うことができるようになっています。しかしあまり普及しているようにはみえません。  
 コミュニティの性質上いまだにPython2がのさばっていることや、JavaScriptのように非同期前提の設計にAPIが（まだ）なっていないなどの理由があるんじゃあないかと推測していますが、もう１つAPIが<s>古臭い</s>少々複雑であるというのも少なからず影響しているかとおもいます。
@@ -95,4 +97,39 @@ Future is Done!
 ドキュメントを雑に読んで思いつきで実装したライブラリなので実用性皆無だとおもいますが、やたら登場する役者が多い上に低レイヤな解説に終始している公式の説明を理解するためのお供にどうでしょうか。
 
 https://github.com/aio-libs みたいなものも登場しているので、徐々にですがPythonでも非同期関係のAPIが充実していくといいですね！ おしまい。
+
+
+## 追記
+
+もう一度ドキュメントを読み返していたら、実は僕のしょうもないラッパーなしでももうちょっと簡単に書けることが判明。  
+実は `ensure_future` はcoroutineを渡された場合、Future(Task)化したオブジェクトを返り値に持ち、 `run_until_complete` はFutureの中身をunwrapするようです。
+
+つまり最初に提示した公式のexampleは以下のように書き換えることが可能です
+
+
+```python
+
+import asyncio
+
+
+async def slow_operation():
+    await asyncio.sleep(1)
+    return 'Future is done!'
+
+
+loop = asyncio.get_event_loop()
+result = asyncio.ensure_future(slow_operation())
+unwraped_result = loop.run_until_complete(result)
+print(unwraped_result)
+loop.close()
+
+```
+
+……これでいいじゃん。さよなら僕の1時間。
+
+もちろん僕の読み方が雑（特に英文を読むときはかなり酷い）なのもあるのですが、正直公式の例は間違ってはいないし丁寧でありつつも非効率的な書き方を助長するようになっているような気がしてなりません……。  
+実際、世の中のasync関連の解説の多くがensure_futureとrun_until_completeが返り値を持つことに触れてません。
+
+うーん、わかりやすさよりも正しさや詳細さを優先するということなのでしょうか……。  
+今後、静的型検査の機能が公式にマージされたら各関数の型が明示されるようになってドキュメントもわかりやすくなるかもしれませんね。以上追記でした。
 
