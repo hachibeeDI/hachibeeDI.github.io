@@ -8,6 +8,10 @@
       "path---tags-blog-11406eb1c5741887eb55.js",
       "path---tags-blog-11406eb1c5741887eb55.js.map"
     ],
+    "path---tags-type-script": [
+      "path---tags-type-script-8bff81432a3e2f9d60d7.js",
+      "path---tags-type-script-8bff81432a3e2f9d60d7.js.map"
+    ],
     "path---entry-first-announcement": [
       "path---entry-first-announcement-889f5fa1f700745161e4.js",
       "path---entry-first-announcement-889f5fa1f700745161e4.js.map"
@@ -33,16 +37,16 @@
       "path---tags-meta-programming-823841a6f626fd487fe4.js.map"
     ],
     "path---": [
-      "path----23fe992f08d878feaa64.js",
-      "path----23fe992f08d878feaa64.js.map"
+      "path----45134130b5fdc2f253f2.js",
+      "path----45134130b5fdc2f253f2.js.map"
     ],
     "path---tags-async": [
       "path---tags-async-98dd67c3081600adccb4.js",
       "path---tags-async-98dd67c3081600adccb4.js.map"
     ],
     "path---entry-implement-next-and-previous-links-to-gatsby": [
-      "path---entry-implement-next-and-previous-links-to-gatsby-910c8a8f9b01de989ea1.js",
-      "path---entry-implement-next-and-previous-links-to-gatsby-910c8a8f9b01de989ea1.js.map"
+      "path---entry-implement-next-and-previous-links-to-gatsby-5472cad014f072bdae10.js",
+      "path---entry-implement-next-and-previous-links-to-gatsby-5472cad014f072bdae10.js.map"
     ],
     "path---entry-make-pthons-async-easy": [
       "path---entry-make-pthons-async-easy-cd16feb786a46eabe22d.js",
@@ -53,8 +57,8 @@
       "path---entry-redux-debounced-action-dispatcher-7f549fbb46cfbf0e493c.js.map"
     ],
     "path---tags-react": [
-      "path---tags-react-0d8e8da2c66a312bd75a.js",
-      "path---tags-react-0d8e8da2c66a312bd75a.js.map"
+      "path---tags-react-884e122958086d6dd1f7.js",
+      "path---tags-react-884e122958086d6dd1f7.js.map"
     ],
     "path---entry-react-native-begginers-guide": [
       "path---entry-react-native-begginers-guide-ecb0e289d1b30cec791d.js",
@@ -81,8 +85,8 @@
       "path---entry-unify-sync-and-async-function-in-python-08add278e059aa2e8a09.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-feafad4725aa3ae53381.js",
-      "component---src-layouts-index-js-feafad4725aa3ae53381.js.map"
+      "component---src-layouts-index-js-42968e6cabcb64593260.js",
+      "component---src-layouts-index-js-42968e6cabcb64593260.js.map"
     ],
     "path---tags-gatsby": [
       "path---tags-gatsby-5cf610e0ff92fb0cf92d.js",
@@ -97,16 +101,16 @@
       "path---categories-vim-4af707634669a3944bbb.js.map"
     ],
     "path---index": [
-      "path---index-a34c73177cb233be2557.js",
-      "path---index-a34c73177cb233be2557.js.map"
+      "path---index-8c738da33253e17d32e7.js",
+      "path---index-8c738da33253e17d32e7.js.map"
     ],
     "path---categories-front-end": [
       "path---categories-front-end-47ba41a2b856087aeec7.js",
       "path---categories-front-end-47ba41a2b856087aeec7.js.map"
     ],
     "path---tags-redux": [
-      "path---tags-redux-8c0a9ad1d3fc60fe2dea.js",
-      "path---tags-redux-8c0a9ad1d3fc60fe2dea.js.map"
+      "path---tags-redux-d83d0ff077ec1d0010c4.js",
+      "path---tags-redux-d83d0ff077ec1d0010c4.js.map"
     ],
     "component---src-templates-category-js": [
       "component---src-templates-category-js-b4f519798a759ddd29f2.js",
@@ -149,14 +153,22 @@
       "path---tags-java-script-e4e5dbeb753ae3ff794e.js.map"
     ],
     "app": [
-      "app-1a383e94d516fbe8283f.js",
+      "app-8687f8e1dae0408f8963.js",
       "build-js-styles.css",
-      "app-1a383e94d516fbe8283f.js.map",
+      "app-8687f8e1dae0408f8963.js.map",
       "build-js-styles.css.map"
     ],
     "path---entry-how-to-add-site-xml": [
       "path---entry-how-to-add-site-xml-244efc86e2be1fc9e413.js",
       "path---entry-how-to-add-site-xml-244efc86e2be1fc9e413.js.map"
+    ],
+    "path---categories-web": [
+      "path---categories-web-e90933f636f996dcafef.js",
+      "path---categories-web-e90933f636f996dcafef.js.map"
+    ],
+    "path---entry-things-must-consider-before-pick-typescript": [
+      "path---entry-things-must-consider-before-pick-typescript-b4f7b2fdfcd8f7252472.js",
+      "path---entry-things-must-consider-before-pick-typescript-b4f7b2fdfcd8f7252472.js.map"
     ],
     "path---tags-async-await": [
       "path---tags-async-await-c596a49d93a738baba55.js",

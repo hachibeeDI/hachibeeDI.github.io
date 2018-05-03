@@ -13,11 +13,13 @@
 <url> <loc>https://hachibeedi.github.io/entry/async-supported-json-rpc-handler</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hachibeedi.github.io/entry/unify-sync-and-async-function-in-python</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hachibeedi.github.io/entry/implement-next-and-previous-links-to-gatsby</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://hachibeedi.github.io/entry/things-must-consider-before-pick-typescript</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hachibeedi.github.io/categories/gatsby/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hachibeedi.github.io/categories/front-end/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hachibeedi.github.io/categories/python/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hachibeedi.github.io/categories/vim/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hachibeedi.github.io/categories/mobile-app/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://hachibeedi.github.io/categories/web/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hachibeedi.github.io/tags/blog/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hachibeedi.github.io/tags/gatsby/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hachibeedi.github.io/tags/java-script/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -30,5 +32,6 @@
 <url> <loc>https://hachibeedi.github.io/tags/react-native/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hachibeedi.github.io/tags/json-rpc/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hachibeedi.github.io/tags/async/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://hachibeedi.github.io/tags/type-script/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hachibeedi.github.io/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
