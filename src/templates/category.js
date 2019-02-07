@@ -5,7 +5,7 @@ import config from '../data/site-config';
 
 export default class CategoryTemplate extends React.Component {
   render() {
-    const {category} = this.props.pathContext;
+    const {category} = this.props.pageContext;
     const postEdges = this.props.data.allMarkdownRemark.edges;
     const title = `Posts in a category "${category}" | ${config.siteTitle}`;
     return (

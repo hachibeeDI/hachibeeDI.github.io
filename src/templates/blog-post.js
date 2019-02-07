@@ -3,6 +3,7 @@ import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 import get from 'lodash/get';
 import _ from 'lodash';
+import {graphql} from 'gatsby';
 
 import Bio from '../components/Bio';
 import SEO from '../components/SEO';
@@ -30,26 +31,23 @@ const PostNav = ({prev, next}) => (
   </div>
 );
 
-class BlogPostTemplate extends React.Component {
+class BlogPostTemplate extends React.PureComponent {
   render() {
+    const {pageContext} = this.props;
     const post = this.props.data.markdownRemark;
-    const {frontmatter} = post;
-    const siteTitle = get(this.props, 'data.site.siteMetadata.title');
-
-    const {next, prev} = this.props.pathContext;
 
     return (
       <article className="main-article" role="main">
-        <Helmet title={`${frontmatter.title} | ${siteTitle}`} />
-        <SEO postNode={post} postPath={frontmatter.path} postSEO />
+        <Helmet title={`${pageContext.title} | ${this.props.data.site.siteMetadata.title}`} />
+        <SEO postNode={post} postPath={pageContext.path} postSEO />
         <header>
-          <h1 className="article-title">{frontmatter.title}</h1>
+          <h1 className="article-title">{pageContext.title}</h1>
           <nav role="navigation">
             <div>
-              Category: <Link to={`/categories/${_.kebabCase(frontmatter.category)}`}>{frontmatter.category}</Link>
+              Category: <Link to={`/categories/${_.kebabCase(pageContext.category)}`}>{pageContext.category}</Link>
             </div>
             <div>
-              {frontmatter.tags.map(t => (
+              {pageContext.tags.map(t => (
                 <Link key={t} className="tags" to={`/tags/${_.kebabCase(t)}`}>
                   <span>{t}</span>
                 </Link>
@@ -64,19 +62,19 @@ class BlogPostTemplate extends React.Component {
               marginBottom: '26px',
             }}
           >
-            {frontmatter.date}
+            {pageContext.date}
           </p>
         </header>
         <section className="markdown-section" dangerouslySetInnerHTML={{__html: post.html}} />
 
         <footer>
-          <SNSShare title={frontmatter.title} link={`${siteUrl}entry/${frontmatter.path}`} />
+          <SNSShare title={pageContext.title} link={`${siteUrl}entry/${pageContext.path}`} />
           <hr
             style={{
               marginBottom: '26px',
             }}
           />
-          <PostNav prev={prev} next={next} />
+          <PostNav prev={pageContext.prev} next={pageContext.next} />
           <Bio />
         </footer>
       </article>
@@ -87,14 +85,14 @@ class BlogPostTemplate extends React.Component {
 export default BlogPostTemplate;
 
 export const pageQuery = graphql`
-  query BlogPostByPath($path: String!) {
+  query($articlePath: String!) {
     site {
       siteMetadata {
         title
         author
       }
     }
-    markdownRemark(frontmatter: {path: {eq: $path}}) {
+    markdownRemark(frontmatter: {path: {eq: $articlePath}}) {
       id
       html
       frontmatter {

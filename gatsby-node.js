@@ -22,9 +22,11 @@ exports.createPages = ({graphql, boundActionCreators}) => {
               edges {
                 node {
                   frontmatter {
+                    title
                     path
                     category
                     tags
+                    date
                   }
                 }
                 next {
@@ -49,22 +51,21 @@ exports.createPages = ({graphql, boundActionCreators}) => {
           return reject(errors);
         }
 
-        console.log(data);
         // Create blog posts pages.
         const categories = new Set();
         const tags = new Set();
         data.allMarkdownRemark.edges.forEach(({node, next, prev}) => {
           const {frontmatter} = node;
 
+          const context = {...frontmatter, id: node.id, articlePath: frontmatter.path, next, prev};
+          // because `path` is received by Gatsby
+          delete context.path;
+
           createPage({
             path: `/entry/${frontmatter.path}`,
+            articlePath: frontmatter.path,
             component: blogPost,
-            context: {
-              id: node.id,
-              path: frontmatter.path,
-              next,
-              prev,
-            },
+            context,
           });
 
           categories.add(frontmatter.category);
@@ -94,67 +95,3 @@ exports.createPages = ({graphql, boundActionCreators}) => {
     );
   });
 };
-//
-//
-// exports.sourceNodes = async ({ boundActionCreators }) => {
-//   const { createNode } = boundActionCreators
-//
-//   return new Promise(resolve => {
-//     resolve(
-//       graphql(
-//         `
-//         {
-//           allMarkdownRemark(limit: 1000) {
-//             edges {
-//               node {
-//                 frontmatter {
-//                   category
-//                   tags
-//                 }
-//               }
-//             }
-//           }
-//         }
-//         `
-//       )
-//         .then(({errors, data}) => {
-//
-//           const categories = new Set();
-//           const tags = new Set();
-//           data.allMarkdownRemark.edges
-//             .forEach(({node, next, prev}) => {
-//               const {frontmatter} = node
-//
-//               categories.add(frontmatter.category)
-//               frontmatter.tags.forEach(tags.add.bind(tags))
-//             });
-//
-//           const stringiMetadata = JSON.stringify({
-//             categories,
-//             tags,
-//           });
-//           createNode({
-//             // Data for the node.
-//             categories,
-//             tags,
-//
-//             // Required fields.
-//             id: 'siteExternalData',
-//             parent: null, // or null if it's a source node without a parent
-//             children: [],
-//             internal: {
-//               type: 'CoolServiceMarkdownField',
-//               contentDigest: crypto
-//                 .createHash('md5')
-//                 .update(JSON.stringify(stringiMetadata))
-//                 .digest('hex'),
-//             // mediaType: 'text/markdown', // optional
-//               content: JSON.stringify(stringiMetadata), // optional
-//             }
-//           });
-//
-//         })
-//     );
-//
-//   });
-// };

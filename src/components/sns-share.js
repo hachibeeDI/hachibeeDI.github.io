@@ -1,31 +1,53 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import {ShareButtons, ShareCounts, generateShareIcon} from 'react-share';
-
-const {
+import {
   FacebookShareButton,
   GooglePlusShareButton,
   LinkedinShareButton,
   TwitterShareButton,
+  TelegramShareButton,
   WhatsappShareButton,
   PinterestShareButton,
+  VKShareButton,
+  OKShareButton,
   RedditShareButton,
   TumblrShareButton,
+  LivejournalShareButton,
+  MailruShareButton,
+  ViberShareButton,
+  WorkplaceShareButton,
+  LineShareButton,
   EmailShareButton,
-} = ShareButtons;
-
-const FacebookIcon = generateShareIcon('facebook');
-const TwitterIcon = generateShareIcon('twitter');
-// const TelegramIcon = generateShareIcon('telegram');
-const WhatsappIcon = generateShareIcon('whatsapp');
-const GooglePlusIcon = generateShareIcon('google');
-const LinkedinIcon = generateShareIcon('linkedin');
-const PinterestIcon = generateShareIcon('pinterest');
-// const VKIcon = generateShareIcon('vk');
-// const OKIcon = generateShareIcon('ok');
-const RedditIcon = generateShareIcon('reddit');
-const TumblrIcon = generateShareIcon('tumblr');
-const EmailIcon = generateShareIcon('email');
+} from 'react-share';
+import {
+  FacebookShareCount,
+  GooglePlusShareCount,
+  LinkedinShareCount,
+  PinterestShareCount,
+  VKShareCount,
+  OKShareCount,
+  RedditShareCount,
+  TumblrShareCount,
+} from 'react-share';
+import {
+  FacebookIcon,
+  TwitterIcon,
+  TelegramIcon,
+  WhatsappIcon,
+  GooglePlusIcon,
+  LinkedinIcon,
+  PinterestIcon,
+  VKIcon,
+  OKIcon,
+  RedditIcon,
+  TumblrIcon,
+  LivejournalIcon,
+  MailruIcon,
+  ViberIcon,
+  WorkplaceIcon,
+  LineIcon,
+  EmailIcon,
+} from 'react-share';
 
 export default function SNSShare({title, link}) {
   // link = encodeURIComponent(link);

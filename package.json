@@ -7,6 +7,7 @@
     "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
   },
   "dependencies": {
+    "@babel/preset-react": "^7.0.0",
     "gatsby": "^2.0.116",
     "gatsby-link": "^2.0.10",
     "gatsby-plugin-google-analytics": "^2.0.13",
@@ -29,6 +30,8 @@
     "normalize-scss": "^7.0.0",
     "prismjs": "^1.8.4",
     "prop-types": "^15.6.0",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
     "react-helmet": "^5.2.0",
     "react-share": "^2.4.0"
   },

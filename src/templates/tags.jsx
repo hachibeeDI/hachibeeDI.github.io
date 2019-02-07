@@ -5,7 +5,7 @@ import config from '../data/site-config';
 
 export default class TagTemplate extends React.Component {
   render() {
-    const {tag} = this.props.pathContext;
+    const {tag} = this.props.pageContext;
     const postEdges = this.props.data.allMarkdownRemark.edges;
     const title = `Posts contain a tag "${tag}"`;
     return (
